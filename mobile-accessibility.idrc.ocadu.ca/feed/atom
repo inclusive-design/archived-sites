@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en-US"
+  xml:base="https://mobile-accessibility.idrc.ocadu.ca/wp-atom.php"
+   >
+	<title type="text">IDRC Mobile</title>
+	<subtitle type="text">Inclusive Design Research in the Mobile Space</subtitle>
+
+	<updated>2012-08-03T03:03:43Z</updated>
+
+	<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca" />
+	<id>https://mobile-accessibility.idrc.ocadu.ca/feed/atom</id>
+	<link rel="self" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/feed/atom" />
+
+	<generator uri="https://wordpress.org/" version="5.0.3">WordPress</generator>
+	<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[Tekla 0.2 alpha released!]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/779" />
+		<id>http://scyp.idrc.ocad.ca/?p=779</id>
+		<updated>2010-11-16T16:16:54Z</updated>
+		<published>2010-11-16T16:10:08Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" />		<summary type="html"><![CDATA[The 0.2 alpha release of Tekla, the input method that enables access to most Android functions and applications by means of remote switches (particularly those in powered wheelchairs) is now available on the Android Market. This version incorporates significant enhancements to the on-screen keyboard, the switch scan highlight, and the stability of connections to Tekla [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/779"><![CDATA[<div style="width: 210px" class="wp-caption alignright"><a href="http://scyp.idrc.ocad.ca/media/images/tekla/tekla_0.2a_shot2.png"><img title="Composing a text message with Tekla 0.2 alpha" src="http://scyp.idrc.ocad.ca/media/images/tekla/tekla_0.2a_shot2_part.png" alt="Tekla 0.2 alpha screenshot" width="200" /></a><p class="wp-caption-text">Composing a text message with Tekla 0.2 alpha</p></div>
+<p>The 0.2 alpha release of <a href="http://scyp.idrc.ocad.ca/projects/tekla">Tekla</a>, the input method that enables access to most Android functions and applications by means of remote switches (particularly those in powered wheelchairs) is now available on the Android Market.</p>
+<p>This version incorporates significant enhancements to the on-screen keyboard, the switch scan highlight, and the stability of connections to <a href="http://scyp.idrc.ocad.ca/projects/tekla/the-shield">Tekla Shields</a>. An example of the latter is the auto-reconnect feature that allows the phone to automatically scan for, and re-connect to, the last known <a href="http://scyp.idrc.ocad.ca/projects/tekla/the-shield">Tekla Shield</a>. That way, if <a href="http://scyp.idrc.ocad.ca/projects/tekla/the-app">the App</a> or <a href="http://scyp.idrc.ocad.ca/projects/tekla/the-shield">the Shield</a> hiccup and loose connection to each other, users will just need to wait a few seconds to regain control preventing being locked out of the phone!</p>
+<p>It is also important to remember that <a href="http://scyp.idrc.ocad.ca/projects/tekla">Tekla</a> is for everyone (not just switch users) so features like enhanced highlighting should improve on the experience of direct touch users as well. <a href="http://scyp.idrc.ocad.ca/projects/tekla/the-app">Download Tekla</a> today from the Android Market and <a href="http://scyp.idrc.ocad.ca/contact">tell us what you think</a>!</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/779#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/779/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[IDRC&#8217;s participation in the Google Summer of Code 2010, a success!]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/712" />
+		<id>http://scyp.idrc.ocad.ca/?p=712</id>
+		<updated>2010-10-28T21:31:05Z</updated>
+		<published>2010-10-28T21:18:25Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Events" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="code" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Google" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="IDRC" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="mobile" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Tekla" />		<summary type="html"><![CDATA[The Inclusive Design Research Centre has completed a very fruitful participation in the Google Summer of Code 2010. We supervised five students who worked on five different open source projects; three of which were relevant to the mobile space. These three mobile projects were: an ATutor mobile theme, by Alison Benjamin, a native iPhone application [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/712"><![CDATA[<p>The Inclusive Design Research Centre has completed a very fruitful participation in the <a href="http://code.google.com/soc/">Google Summer of Code</a> 2010. We supervised five students who worked on five different open source projects; three of which were relevant to the mobile space. These three mobile projects were:</p>
+<ul>
+<li>an ATutor mobile theme, by Alison Benjamin,</li>
+<li>a native iPhone application for ATutor Social with VoiceOver support and push notification, by Anh Quang Do, and </li>
+<li><a href="http://scyp.idrc.ocad.ca/projects/tekla">Tekla</a>, an app that allows powered wheelchair users to control Android handsets, by <a href="http://www.metronews.ca/toronto/local/article/610970--paralyzed-man-s-work-helps-disabled-kids--page1">Eric Wan</a>.</li>
+</ul>
+<p>All these projects were received with interest during the Google Summer of Code Mentor Summit at Googleplex this past weekend and, although many developers are unfamiliar with the best practices in accessibility, all of them understood right away the value of inclusive design in all contexts, particularly in the mobile space. <a href="http://idrc.ocad.ca/index.php?option=com_content&#038;task=view&#038;id=387&#038;Itemid=116">Jorge Silva</a>, researcher from the IDRC, chaired two sessions at the summit, one on the Tekla project: <a href="http://typewith.me/TouchFreeMobile">&#8220;&#8216;touch-free&#8217; access to mobile devices&#8221;</a>, and another one on <a href="http://typewith.me/indoorpositioning">open source indoor positioning</a>. Googlers were so excited about our work on Tekla that they offered to feature it in <a href="http://google-opensource.blogspot.com/">Google&#8217;s own open source blog</a> as well as the <a href="http://www.sparkfun.com/">Sparkfun</a> hacker store, were we got the parts for the Tekla shield, a device that enables a Bluetooth link between powered wheelchairs and mobile phones.</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/712#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/712/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[Tekla case CAD drawing available]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/638" />
+		<id>http://scyp.idrc.ocad.ca/?p=638</id>
+		<updated>2010-09-07T15:47:08Z</updated>
+		<published>2010-09-07T15:38:06Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" />		<summary type="html"><![CDATA[We have done quite a bit of work during the summer getting the Tekla on-screen keyboard ready for Android. Amongst other features, Tekla will enable powered wheelchair users to access their smartphones directly from their wheelchairs via bluetooth. This will require a small, custom piece of hardware mounted on the wheelchair (called the Tekla shield), [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/638"><![CDATA[<div style="width: 290px" class="wp-caption alignright"><object width="280" height="235"><param name="movie" value="http://www.youtube.com/v/wdw8NN8Yek8?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/wdw8NN8Yek8?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="280" height="235"></embed></object><p class="wp-caption-text">Prototype tekla case</p></div>
+<p>We have done quite a bit of work during the summer getting the <a href="http://scyp.idrc.ocad.ca/projects/tekla">Tekla</a> on-screen keyboard ready for Android. Amongst other features, <a href="http://scyp.idrc.ocad.ca/projects/tekla">Tekla</a> will enable powered wheelchair users to access their smartphones directly from their wheelchairs via bluetooth. This will require a small, custom piece of hardware mounted on the wheelchair (called the Tekla shield), and since this hardware will be exposed to the weather, it needs a protective case.</p>
+<p>This is what Zongyi Yang, an Enginerring student at the University of Toronto, has been working on for the past few days. Check out the video of the prototype case, we will be using a 3D printer soon to create a sample that we can mount on <a href="http://www.metronews.ca/toronto/local/article/610970--paralyzed-man-s-work-helps-disabled-kids--page1">Eric Wan</a>&#8216;s chair. While Zongyi has been working on the hardware, Eric has been making significant contributions to the software since he will be using <a href="http://scyp.idrc.ocad.ca/projects/tekla">Tekla</a> to take notes at school now that he will be starting a Master&#8217;s in Engineering at the University of Toronto.</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/638#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/638/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[SCYP Student receives Pearl Gryfe assistive technology award]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/396" />
+		<id>http://scyp.idrc.ocad.ca/?p=396</id>
+		<updated>2009-11-17T21:00:21Z</updated>
+		<published>2009-11-17T20:54:18Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" />		<summary type="html"><![CDATA[Naomi Justason, an Occupational Therapy student who completed her research with SCYP last year, was announced as the 2008-2009 recipient of the Pearl Gryfe assistive technology award. Sponsored by Assistive Technology Clinic, this award is presented by the Department of Occupational Science &#38; Occupational Therapy at the University of Toronto &#8220;to the student who has [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/396"><![CDATA[<p>Naomi Justason, an Occupational Therapy student who completed her research with SCYP last year, was announced as the 2008-2009 recipient of the Pearl Gryfe assistive technology award. Sponsored by Assistive Technology Clinic, this award is presented by the <a href="http://www.ot.utoronto.ca/">Department of Occupational Science &amp; Occupational Therapy at the University of Toronto</a> &#8220;to the student who has demonstrated a keen interest in and excellent understanding of the role assistive technology plays in improving the functional independence of people with various disabilities&#8221;.</p>
+<p>Naomi obtained this award for her research entitled: &#8220;GPS-based navigation in the everyday life of blind users&#8221;. A copy of the poster she presented at the <a href="http://www.ot.utoronto.ca/research/research_day/">Thelma Cardwell Research Day</a> is available from the following link:</p>
+<p><a href="http://scyp.idrc.ocad.ca/media/slides/OT-GPS-poster.pdf">http://scyp.idrc.ocad.ca/media/slides/OT-GPS-poster.pdf</a></p>
+<p>Congratulations Naomi!</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/396#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/396/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[SCYP Re-loaded]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/303" />
+		<id>http://scyp.idrc.ocad.ca/?p=303</id>
+		<updated>2009-10-22T03:01:33Z</updated>
+		<published>2009-10-22T03:01:33Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" />		<summary type="html"><![CDATA[It has been a while since the last time we wrote a blog entry, but now is as good a time as any to finally do it. We do have lots of good news to share though; for starters, the SCYP website has been completely revamped to reflect our current activities and to make it [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/303"><![CDATA[<p>It has been a while since the last time we wrote a blog entry, but now is as good a time as any to finally do it. We do have lots of good news to share though; for starters, the SCYP website has been completely revamped to reflect our current activities and to make it more consistent with the look &#038; feel of the <a href="http://idrc.ocad.ca/">ATRC site</a>.</p>
+<p>We also released a week ago a new version of the <a href="https://addons.mozilla.org/en-US/firefox/addon/13227">tagin! Firefox extension</a> which, amongst other minor improvements, included a change of server location. So, if you have previous versions installed, you will really want to upgrade because we broke all the previous versions!</p>
+<p>The new academic year also brought a bunch of outstanding students working on various SCYP projects, like Julie and Esther from the Occupational Therapy department, as well as Tian, Mark and Jingqi from Computer Science and Engineering. They will be working on everything from a documentary narrating the struggle for access to assistive technology by people with disabilities in the GTA, to a bluetooth link that allows powered-wheelchair users to control a mobile device from their wheelchair. So we will be blogging away in the near future to show off their achievements!</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/303#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/303/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[Tetra and SCYP strengthen collaborations]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/41" />
+		<id>http://scyp.idrc.ocad.ca/wp/?p=41</id>
+		<updated>2010-04-13T14:51:16Z</updated>
+		<published>2009-02-27T21:34:00Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="experiential learning" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Tetra" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="volunteering" />		<summary type="html"><![CDATA[The Tetra Society of North America, a volunteer-based organization that creates simple assistive devices and adaptations for people with disabilities, is collaborating closely with SCYP and the ATRC in order to increase its capacity and quality of services in the GTA. As part of this collaboration, Tetra has established a student representative position, which was [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/41"><![CDATA[<p>The <a href="http://www.tetrasociety.org/">Tetra Society of North America</a>, a volunteer-based organization that creates simple assistive devices and adaptations for people with disabilities, is collaborating closely with <a href="http://scyp.idrc.ocad.ca/">SCYP</a> and the <a href="http://idrc.ocad.ca/">ATRC</a> in order to increase its capacity and quality of services in the GTA. As part of this collaboration, <a href="http://www.tetrasociety.org/">Tetra</a> has established a student representative position, which was filled recently  by William Li, an outstanding 4th year Engineering Science student. We hope this partnership will provide lots of experiential learning opportunities to UofT students, who will be able to assist Tetra volunteers in the solution of inclusive design challenges in real contexts. At the same time, students with disabilities at UofT may be benefitted by Tetra&#8217;s on-campus prescence. If you are interested in working with us or have a request to make, please don&#8217;t hesitate to <a href="mailto:idi-mobile@lists.launchpad.net">contact us</a>!</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/41#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/41/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[WIPS gearing up for BETA release]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/40" />
+		<id>http://scyp.idrc.ocad.ca/wp/?p=40</id>
+		<updated>2010-05-05T22:05:25Z</updated>
+		<published>2009-02-27T20:20:00Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="indoor positioning" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="WiFi" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="WIPS" />		<summary type="html"><![CDATA[Within the next few weeks, the a SCYP team will be announcing the first beta release of the WiFi-based Indoor Positioning System (WIPS) developed in-house. We will also make a positioning server available to students, staff and faculty at the University of Toronto, who may be interested in prototyping location-based services for the UofT community. [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/40"><![CDATA[<p>Within the next few weeks, the a <a href="http://scyp.idrc.ocad.ca/">SCYP</a> team will be announcing the first beta release of the <a href="http://scyp.idrc.ocad.ca/wips">WiFi-based Indoor Positioning System (WIPS)</a> developed in-house. We will also make a positioning server available to students, staff and faculty at the University of Toronto, who may be interested in prototyping location-based services for the UofT community.</p>
+<p>We cannot yet give out many of the details on how access to this positioning server will be enabled, since things will likely keep changing as we prepare for the release, but there are some basic details that are likely to remain unchanged. For instance:</p>
+<ul>
+<li>Clients accessing the <a href="http://scyp.idrc.ocad.ca/wips">WIPS</a> server will be required to establish a UDP connection in order to submit position estimate requests.</li>
+<li>The  <a href="http://scyp.idrc.ocad.ca/wips">WIPS</a> server will respond to XML-formatted requests containing information about the WiFi access points available in a particular location. For example:
+<pre><code > 1 &lt;?xml version="1.0"?&gt;
+ 2   &lt;!DOCTYPE client_message [
+ 3     &lt;!ELEMENT client_message (message_type,auth_key?,location?,scans)&gt;
+ 4     &lt;!ELEMENT message_type (#PCDATA)&gt;
+ 5     &lt;!ELEMENT auth_key (#PCDATA)&gt;
+ 6     &lt;!ELEMENT location (building_name,floor,x,y,gps?)&gt;
+ 7     &lt;!ELEMENT building_name (#PCDATA)&gt;
+ 8     &lt;!ELEMENT floor (#PCDATA)&gt;
+ 9     &lt;!ELEMENT x (#PCDATA)&gt;
+10     &lt;!ELEMENT y (#PCDATA)&gt;
+11     &lt;!ELEMENT gps (long,lat,sats)&gt;
+12     &lt;!ELEMENT lon (#PCDATA)&gt;
+13     &lt;!ELEMENT lat (#PCDATA)&gt;
+14     &lt;!ELEMENT sats (#PCDATA)&gt;
+15     &lt;!ELEMENT scans (scan+)&gt;
+16     &lt;!ELEMENT scan (ap+)&gt;
+17     &lt;!ELEMENT ap (mac,strength,channel,mode)&gt;
+18     &lt;!ELEMENT mac (#PCDATA)&gt;
+19     &lt;!ELEMENT strength (#PCDATA)&gt;
+20     &lt;!ELEMENT channel (#PCDATA)&gt;
+21     &lt;!ELEMENT mode (#PCDATA)&gt;]&gt;
+22     &lt;client_message&gt;
+23       &lt;message_type&gt;request&lt;/message_type&gt;
+24       &lt;scans&gt;
+25         &lt;scan&gt;
+26           &lt;ap&gt;
+27             &lt;mac&gt;02AB34ED0E56&lt;/mac&gt;
+28             &lt;strength&gt;78.0&lt;/strength&gt;
+29             &lt;channel&gt;11&lt;/channel&gt;
+30             &lt;mode&gt;Ad-Hoc&lt;/mode&gt;
+31           &lt;/ap&gt;
+32         &lt;/scan&gt;
+33         &lt;scan&gt;
+34           &lt;ap&gt;
+35             &lt;mac&gt;02AB34ED0E56&lt;/mac&gt;
+36             &lt;strength&gt;76.0&lt;/strength&gt;
+37             &lt;channel&gt;11&lt;/channel&gt;
+38             &lt;mode&gt;Ad-Hoc&lt;/mode&gt;
+39           &lt;/ap&gt;
+40         &lt;/scan&gt;
+41         &lt;scan&gt;
+42           &lt;ap&gt;
+43             &lt;mac&gt;02AB34ED0E56&lt;/mac&gt;
+44             &lt;strength&gt;76.0&lt;/strength&gt;
+45             &lt;channel&gt;11&lt;/channel&gt;
+46             &lt;mode&gt;Ad-Hoc&lt;/mode&gt;
+47           &lt;/ap&gt;
+48           &lt;ap&gt;
+49             &lt;mac&gt;001188F521B0&lt;/mac&gt;
+50             &lt;strength&gt;82.0&lt;/strength&gt;
+51             &lt;channel&gt;1&lt;/channel&gt;
+52             &lt;mode&gt;Master&lt;/mode&gt;
+53           &lt;/ap&gt;
+54         &lt;/scan&gt;
+55       &lt;/scans&gt;
+56     &lt;/client_message&gt;</code></pre>
+</li>
+<li>Once such a request is received, the <a href="http://scyp.idrc.ocad.ca/wips">WIPS</a> server will return XML-formatted data containing the estimated position. This will include:
+<ul>
+<li>the building name,</li>
+<li>the floor number,</li>
+<li>the floorplan URL,</li>
+<li>the X and Y graphical coordinates (with respect to the floorplan), and</li>
+<li>the accuracy of the estimate</li>
+</ul>
+</li>
+</ul>
+<p>As part of the beta release, we will be collecting data in select buildings across the UofT campus, so if you can&#8217;t wait to use the <a href="http://scyp.idrc.ocad.ca/wips">WIPS indoor positioning system</a>, please <a href="mailto:idi-mobile@lists.launchpad.net">let us know</a> so we include your building in the beta testing.</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/40#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/40/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[WIPS Site Launched]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/38" />
+		<id>http://scyp.idrc.ocad.ca/wp/?p=38</id>
+		<updated>2010-09-07T15:37:40Z</updated>
+		<published>2009-02-21T19:24:00Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="indoor positioning" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="WiFi" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="WIPS" />		<summary type="html"><![CDATA[We have been super busy in the past couple of months building the infrastructure that will allow mobile application developers to bring location-based services indoors. As part of this effort, we have recently launched the WIPS site. WIPS, which stands for WiFi-based Indoor Positioning System, enables practical indoor localization, an essential requirement for the extension [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/38"><![CDATA[<p><div style="width: 90px" class="wp-caption alignleft"><a href="http://scyp.idrc.ocad.ca/wips"><img alt="WIPS logo" src="http://scyp.idrc.ocad.ca/media/images/wips_logo_final_80x80.png" title="WIPS logo" width="80" height="80" /></a><p class="wp-caption-text">WIPS logo</p></div>We have been super busy in the past couple of months building the infrastructure that will allow mobile application developers to bring location-based services indoors. As part of this effort, we have recently launched the <a href="http://scyp.idrc.ocad.ca/wips">WIPS site</a>. <a href="http://scyp.idrc.ocad.ca/wips">WIPS</a>, which stands for <a href="http://scyp.idrc.ocad.ca/wips">WiFi-based Indoor Positioning System</a>, enables practical indoor localization, an essential requirement for the extension of mapping, navigation, tagging, social networking and tons more into indoor environments.</p>
+<p>We will soon come up with an API and other development tools that will allow students, staff and faculty at the University of Toronto to play with this new technology, but in the meanwhile, feel free to <a href="http://scyp.idrc.ocad.ca/wips">drop by the site</a>!</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/38#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/38/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[Indoor positioning prototype application]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/22" />
+		<id>http://localhost/wordpress/?p=22</id>
+		<updated>2010-05-05T22:08:26Z</updated>
+		<published>2008-10-15T18:58:00Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="indoor positioning" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="WiFi" />		<summary type="html"><![CDATA[The future of the wifi location tool is looking pretty bright &#8212; we&#8217;ve got a workng data collection and location tool using just indoor wifi! The above screen shot is of real wifi scan done using the prototype wifi+gps scanning application that Jorge, Jamon and Yura have been working on. The image shows a series [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/22"><![CDATA[<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_GdQkxdU1WTc/SS7scokaA8I/AAAAAAAAAAM/zU_5gP23yVw/s1600-h/Screenshot.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 398px; height: 400px;" src="http://1.bp.blogspot.com/_GdQkxdU1WTc/SS7scokaA8I/AAAAAAAAAAM/zU_5gP23yVw/s400/Screenshot.png" alt="" id="BLOGGER_PHOTO_ID_5273412190368039874" border="0" /></a><br />The future of the wifi location tool is looking pretty bright &#8212; we&#8217;ve got a workng data collection and location tool using just indoor wifi!</p>
+<p>The above screen shot is of real wifi scan done using the prototype <a href="https://launchpad.net/wips">wifi+gps scanning application</a> that Jorge, Jamon and Yura have been working on. The image shows a series of overlapping circles of varying colours that represent three different algorithms used to calculate a current postion. Green is Yura&#8217;s algorithm, red is Jorge&#8217;s, and the blue is a combination of the two. The black dots represent past scans of the wireless environment. Already the application has a 5-10 metre degree  of relative accuracy on the floorplan and is able to locate a user on a specific floor of a specific building. The most important part? This ability to locate a user within a given area on a floor only uses wifi signals &#8212; the application doesn&#8217;t rely on <a href="http://en.wikipedia.org/wiki/GPS">GPS</a> or <a href="http://en.wikipedia.org/wiki/Mobile_phone_tracking">cellular tracking</a> at all.</p>
+<p>Looking forward, the next step is to implement a user friendly interface that can be used to allow users to tag or leave notes about specific locations. Other users can then read and respond at a later date with their own tag/comment. This functionality is similar to Mozilla&#8217;s recently announced <a href="http://mozillalabs.com/geode/">Geode project</a> that locates users in a city using wifi and allows tagging locations.  Another task is to create a way to inform users that they are indeed on a particular floor without having to run the data collection tool (which is admittedly a little scary ). The Mozilla Geode interface, complete with a <a href="http://dev.w3.org/geo/api/spec-source.html">W3C Geolocation API</a> might be just the ticket there too. Finally, refining the algorithm that Yura and Jorge have created to achieve a higher degree of precision may allow users to navigate through areas of specific floors, which would be a truly remarkable achievement indeed!</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/22#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/22/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+		<entry>
+		<author>
+			<name>jorge</name>
+					</author>
+		<title type="html"><![CDATA[Printed circuit boards anyone?]]></title>
+		<link rel="alternate" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/21" />
+		<id>http://localhost/wordpress/?p=21</id>
+		<updated>2009-03-21T00:21:58Z</updated>
+		<published>2008-09-10T18:33:00Z</published>
+		<category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="Uncategorized" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="CAD" /><category scheme="https://mobile-accessibility.idrc.ocadu.ca" term="PCB" />		<summary type="html"><![CDATA[We would like to extend our appreciation to the Department of Electrical &#38; Computer Engineering at the University of Toronto and Cadence Design Systems since they have made available to us a handful of licenses for industry-quality printed circuit board (PCB) computer-aided design (CAD) software. The software will be available to UofT students working with [&#8230;]]]></summary>
+		<content type="html" xml:base="https://mobile-accessibility.idrc.ocadu.ca/archives/21"><![CDATA[<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://upload.wikimedia.org/wikipedia/commons/6/65/PCB_Spectrum.jpg"><img style="margin: 0pt 10px 10px 0pt; float: left; cursor: pointer; width: 220px; height: 114px;" src="http://upload.wikimedia.org/wikipedia/commons/6/65/PCB_Spectrum.jpg" alt="printed circuit" border="0" /></a>We would like to extend our appreciation to the <a href="http://www.ece.utoronto.ca/">Department of Electrical &amp; Computer Engineering</a> at the University of Toronto and <a href="http://www.cadence.com/">Cadence Design Systems</a> since they have made available to us a handful of licenses for industry-quality printed circuit board (PCB) computer-aided design (CAD) software.</p>
+<p>The software will be available to UofT students working with SCYP at the <a href="http://idrc.ocad.ca/">ATRC</a> and will be most useful in the completion of our current <a href="http://wiki.scyp.idrc.ocad.ca/wiki/AlternativeInput">alternative input projects</a>. Special thanks to Jaro Pristupa for helping us provide the best available resources to our students!</p>
+]]></content>
+			<link rel="replies" type="text/html" href="https://mobile-accessibility.idrc.ocadu.ca/archives/21#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="https://mobile-accessibility.idrc.ocadu.ca/archives/21/feed/atom" thr:count="0"/>
+		<thr:total>0</thr:total>
+		</entry>
+	</feed>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>View source for Tecla Access/Switch Event Provider - IDRC Mobile Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="generator" content="MediaWiki 1.23.6" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="IDRC Mobile Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.mobile-accessibility.idrc.ocadu.ca/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="IDRC Mobile Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: 8b02c92c:resourceloader:filter:minify-css:7:c441a0dba31bcfe63124c41ccf683551 */</style>
+<script src="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tecla_Access/Switch_Event_Provider","wgTitle":"Tecla Access/Switch Event Provider","wgCurRevisionId":1763,"wgRevisionId":0,"wgArticleId":26,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tecla_Access/Switch_Event_Provider","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: 8b02c92c:resourceloader:filter:minify-js:7:8d7e903275f4fc5a5ad6387c1fbe7337 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Tecla_Access_Switch_Event_Provider skin-vector action-edit vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">View source for Tecla Access/Switch Event Provider</span></h1>
+						<div id="bodyContent">
+								<div id="contentSub">← <a href="/Tecla_Access/Switch_Event_Provider" title="Tecla Access/Switch Event Provider">Tecla Access/Switch Event Provider</a></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reasons:
+</p>
+<ul class="permissions-errors">
+<li>The action you have requested is limited to users in one of the groups: <a href="/index.php?title=IDRC_Mobile_Wiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="IDRC Mobile Wiki:Administrators (page does not exist)">Administrators</a>, emailconfirmed.</li>
+<li>You must confirm your email address before editing pages.
+Please set and validate your email address through your <a href="/Special:Preferences" title="Special:Preferences">user preferences</a>.</li>
+</ul>
+<hr />
+<p>You can view and copy the source of this page:
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" lang="en" dir="ltr" name="wpTextbox1">[[File:android_app_architecture.png|400px|thumb|right|Architecture of the Android Tekla input method. The Switch Event Provider is a service that receives switch events via bluetooth from the Arduino board and broadcasts them to the OS.]]
+The Switch Event Provider (SEP) is a Service included with the Android Tekla App. The SEP is responsible for managing the Bluetooth connection with the [[Tekla Shield]] and broadcasting switch events to the Tekla IME as well as other 3rd-party applications.
+
+==Features==
+* Prevents connection timeouts using the data echoing function on the Shield
+* Scans for, and automatically reconnects to, the last Tekla Shield successfully connected if the connection is dropped
+* Exposes API to third party applications in the Android phone
+
+==API==
+
+=== Intents (Control) ===
+
+{|
+! Intent
+! Namespace String
+! Description
+! Extras
+|-
+| Start SEP
+| &lt;code>ca.idi.tekla.sep.SEPService&lt;/code>
+| Use with startService() to initiate a connection to a Tekla Shield. If no shield MAC address is provided, the SEP will attempt a connection with the last successfully connected Shield.
+
+Even if the connection attempt is unsuccessful, the SEP will periodically attempt a connection to a Shield until it is explicitly stopped.
+| Shield Address
+|-
+| Stop SEP
+| &lt;code>ca.idi.tekla.sep.SEPService&lt;/code>
+| Use with stopService() to permanently drop the connection to a Tekla Shield.
+| None
+|}
+
+=== Actions (Broadcasts) ===
+
+{| 
+! Action
+! Namespace String
+! Description
+! Extras
+|-
+| SEP Broadcast Started
+| &lt;code>ca.idi.tekla.sep.action.SEP_BROADCAST_STARTED&lt;/code>
+| Intent broadcasted by the SEP when it has started receiving data from the Tekla Shield.
+| None
+|-
+| SEP Broadcast Stopped
+| &lt;code>ca.idi.tekla.sep.action.SEP_BROADCAST_STOPPED&lt;/code>
+| Intent broadcasted by the SEP when it has stopped receiving data from the Tekla Shield (the connection dropped).
+| None
+|-
+| Switch Event Received
+| &lt;code>ca.idi.tekla.sep.action.SWITCH_EVENT_RECEIVED&lt;/code>
+| Intent broadcasted by the SEP when receiving a switch event from the Tekla Shield.
+| Switch Event
+|}
+
+=== Extras ===
+
+{| 
+! Extra
+! Namespace String
+! Type
+! Description
+|-
+| Shield Address
+| &lt;code>ca.idi.tekla.sep.extra.SHIELD_ADDRESS&lt;/code>
+| String
+| Optional MAC address of the Shield to connect to.
+|-
+| Switch Event
+| &lt;code>ca.idi.tekla.sep.extra.SWITCH_EVENT&lt;/code>
+| Integer
+| The nature of the switch event received according to the table below.
+|}
+
+== Switch Event Flow==
+
+{{wbox | This method of broadcasting switch events will be deprecated in favor of a more generic approach exposing all switch states on every state change. Helper labelled masks will be provided to expose user switch preferences to 3rd.-party applications}}
+
+{| 
+! ACU / Switch Box
+! colspan="2"|Tekla Shield
+! colspan="2"|Arduino
+! Bluetooth Interface
+! Android
+|-
+! Event
+! Port / Pin # changed
+! Pin changed to
+! Pin # changed
+! Pin changed to
+! Byte Sent
+! Switch Event Extra
+|-
+| Switch released
+| Any previously closed
+| Open
+| D8-12
+| HIGH
+| &lt;code>0x0F&lt;/code>
+| 160
+|-
+| Right switch pressed
+| DE9 / 4
+| Closed to common
+(Pin# 8)
+| D8
+| LOW
+| &lt;code>0x0E&lt;/code>
+| 80
+|-
+| Left switch pressed
+| DE9 / 3
+| Closed to common
+(Pin# 8)
+| D9
+| LOW
+| &lt;code>0x0D&lt;/code>
+| 40
+|-
+| Back/Down switch pressed
+| DE9 / 2
+| Closed to common
+(Pin# 8)
+| D10
+| LOW
+| &lt;code>0x0B&lt;/code>
+| 20
+|-
+| Forward/Up switch pressed
+| DE9 / 1
+| Closed to common
+(Pin# 8)
+| D11
+| LOW
+| &lt;code>0x07&lt;/code>
+| 10
+|-
+| Extra 1 pressed
+| 3.5mm plug / tip
+| Closed to base
+| D12
+| LOW
+| &lt;code>0x1F&lt;/code>
+| 8
+|-
+| Extra 2 pressed
+| 3.5mm plug / ring
+| Closed to base
+| ??
+| LOW
+| &lt;code>0x2F&lt;/code>
+| 16
+|}
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Templates used on this page:
+</p></div><ul>
+<li><a href="/Template:Ibox" title="Template:Ibox">Template:Ibox</a> (<a href="/index.php?title=Template:Ibox&amp;action=edit" title="Template:Ibox">view source</a>) </li><li><a href="/Template:Wbox" title="Template:Wbox">Template:Wbox</a> (<a href="/index.php?title=Template:Wbox&amp;action=edit" title="Template:Wbox">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="/Tecla_Access/Switch_Event_Provider" title="Tecla Access/Switch Event Provider">Tecla Access/Switch Event Provider</a>.</p>
+</div>								<div class="printfooter">
+				Retrieved from "<a href="http://wiki.mobile-accessibility.idrc.ocadu.ca/Tecla_Access/Switch_Event_Provider">http://wiki.mobile-accessibility.idrc.ocadu.ca/Tecla_Access/Switch_Event_Provider</a>"				</div>
+												<div id='catlinks' class='catlinks catlinks-allhidden'></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-anonuserpage"><a href="/User:205.211.169.49" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">205.211.169.49</a></li><li id="pt-anontalk"><a href="/User_talk:205.211.169.49" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Tecla+Access%2FSwitch+Event+Provider&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li><li id="pt-createaccount"><a href="/Special:RequestAccount">Request account</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/Tecla_Access/Switch_Event_Provider"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Tecla_Access/Switch_Event_Provider&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view"><span><a href="/Tecla_Access/Switch_Event_Provider" >Read</a></span></li>
+					<li id="ca-viewsource" class="selected"><span><a href="/index.php?title=Tecla_Access/Switch_Event_Provider&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Tecla_Access/Switch_Event_Provider&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label"><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search IDRC Mobile Wiki [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel">
+					<div id="p-logo" role="banner"><a style="background-image: url(http://mobile-accessibility.idrc.ocadu.ca/media/images/IDI_wiki.png);" href="/Main_Page"  title="Visit the main page"></a></div>
+				<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+	<h3 id='p-navigation-label'>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+	<h3 id='p-tb-label'>Tools</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Tecla_Access/Switch_Event_Provider" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Tecla_Access/Switch_Event_Provider" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-info"><a href="/index.php?title=Tecla_Access/Switch_Event_Provider&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/IDRC_Mobile_Wiki:Privacy_policy" title="IDRC Mobile Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/IDRC_Mobile_Wiki:About" title="IDRC Mobile Wiki:About">About IDRC Mobile Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/IDRC_Mobile_Wiki:General_disclaimer" title="IDRC Mobile Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script src="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":126});
+}</script>
+	</body>
+</html>

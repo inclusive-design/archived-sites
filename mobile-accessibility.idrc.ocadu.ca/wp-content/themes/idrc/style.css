@@ -1,0 +1,968 @@
+/*
+Theme Name: IDRC
+Theme URI: 
+Description: The default IDI Wordpress theme.
+Version: 0.1
+Author: Jorge Silva
+Author URI: 
+Tags: accessible, IDI, IDRC
+*/
+@import url("fss-reset.css");
+@import url("fss-layout.css");
+
+* {
+    padding : 0;
+    margin : 0;
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+    font : 12px/1.3em Arial, Helvetica, sans-serif;
+    background-color:#FFFFFF;
+	min-width: 550px;
+}
+
+h2.pagetitle {
+    font-size: 150%;
+    color:#206802;
+    padding-top: 1em;
+}
+
+h3.comments {
+    margin:40px auto 20px;
+    padding:0;
+}
+
+h4 {
+    color:#666;
+    font-size:100%;
+    font-style:italic;
+    padding-bottom:0.1em;
+    padding-top:0.3em;
+}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+    color:#333333;
+}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+    text-decoration:none;
+}
+
+p {
+margin:0;
+padding:0 0 0.5em;
+}
+
+textarea {
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:1em;
+}
+
+ul, ol {
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:1em;
+    list-style-position:outside;
+}
+
+small {
+font-family:Arial,Helvetica,Sans-Serif;
+    font-size:0.9em;
+    line-height:1.5em;
+}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+    color:#777777;
+}
+
+code {
+    -x-system-font:none;
+    font-family:'Courier New',Courier,Fixed;
+    font-size:1.1em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+}
+
+acronym, abbr, span.caps {
+    font-size:0.9em;
+    letter-spacing:0.07em;
+}
+
+a, h2 a:hover, h3 a:hover {
+    color:#114477;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#0066CC;
+    text-decoration:underline;
+}
+
+p img {
+    max-width:100%;
+    padding:0;
+}
+
+img.centered {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+img.alignright {
+    display:inline;
+    margin:0 0 2px 7px;
+    padding:4px;
+}
+
+img.alignleft {
+    display:inline;
+    margin:0 7px 2px 0;
+    padding:4px;
+}
+
+#accessibility {
+    left:-200em;
+    position:absolute;
+    top:-200em;
+}
+
+.breadcrumb {
+    margin:0px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:3px;
+}
+
+#left-content {
+	border-top: 2px solid #00AEEF;
+	float: left;
+	margin-left:10px;
+	padding-top:1em;
+	width:200px;
+}
+
+#left-content ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:-5px 0 0;
+}
+
+#left-content li {
+	font-weight: bold;
+	color: black;
+	list-style: none outside none;
+	border-bottom: 2px dotted #E5E5E5;
+}
+
+#left-content li a {
+	color: black;
+}
+
+#nav-mid ul#mainlevel {
+    padding-bottom:15px;
+}
+
+#nav-bottom {
+	border-top: 2px solid #00AEEF;
+	padding-top: 10px;
+}
+
+ul#mainlevel a:link, ul#mainlevel a:visited {
+	border:0 none;
+	display:block;
+	margin-left:0px;
+	padding-bottom:5px;
+	padding: 10px 0 10px 25px;/*top right bottom left*/
+	text-decoration:none;
+	font-size: 120%;
+}
+
+ul#mainlevel a:hover, ul#mainlevel a:focus, ul#mainlevel .current_page_item a:hover, ul#mainlevel .current_page_item a:focus {
+	background-color:#def;
+    text-decoration:none;
+}
+
+ul#mainlevel .current_page_item a {
+	color: #00aeef;
+	text-decoration: none;
+	background-image: url('http://scyp.idrc.ocad.ca/wp-content/themes/idrc/images/arrow_blue.png');
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+
+ul#mainlevel ul {
+    margin-top:1px;
+}
+ul#mainlevel ul a:link, ul#mainlevel ul a:visited {
+    width:9.3em;
+}
+
+#site-container {
+    padding: 0px;
+    line-height: 180%;
+    background: white;
+}
+
+#site-container img {
+    border:0 none;
+}
+
+#site-header {
+	font-family:Helvetica,arial,sans-serif;
+	padding: 12px 0 22px 20px;/*top right bottom left*/
+	height: 100px;
+}
+
+#site-header img {
+	float:left;
+}
+
+#site-header h1 {
+	margin-left:0;
+	margin-bottom:10px;
+	margin-top:12px;
+	padding-left: 140px;
+	padding-top: 21px;
+	color: #00AEEF;
+	font-size: 3.2em;
+}
+
+#site-header h1 a {
+	display: block;
+	width: 100%;
+	color: #00AEEF;
+	font-weight: bold;
+}
+
+#site-header h2 {
+	padding-left: 140px;
+	margin-top: 18px;
+	font-size: 1.8em;
+	text-transform: lowercase;
+}
+
+#tagline, #tagline a {
+	font-weight:normal !important;
+	color: #666666 !important;
+}
+
+#tagin-tagline, #tagin-tagline a {
+	color: #00AEEF !important;
+	font-size: 1.8em;
+}
+
+#idrc-info {
+	float: right;
+	font-family:Helvetica,arial,sans-serif;
+    font-weight:normal;
+    font-style:italic;
+    color: #003466;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+	font-size: 0.85em;
+	width: 100px;
+}
+
+#idrc-info a {
+	color: #003466;
+}
+
+#idrc-info a img {
+    height: 40px;
+}
+
+#main-content {
+	border-top: 2px solid #00AEEF;
+	margin:0px 20px 0px 260px;/*top right bottom left*/
+    padding:0px 0 20px 0;/*top right bottom left*/
+    line-height:1.6em;
+    font-size:1.1em;
+    margin-bottom: 10px;
+}
+
+#main-content a {
+    color : #008FD4;
+}
+
+#main-content a:hover, #main-content a:focus {
+    color : #004F94;
+    background-color: #dfefff;
+}
+
+#main-content a img {
+    color : white;
+    background-color: white;
+}
+
+#main-content .entry {
+    line-height:1.4em;
+}
+
+#main-content h2 {
+    font-size: 1.5em;
+    color: #004F94;
+}
+
+#main-content h3 {
+    font-size: 125%;    
+    padding-top: 0.75em; 
+    color: #206802;
+    font-style: italic
+}
+
+#main-content h4 {
+	font-size: 110%;
+	font-style:italic;
+	padding-top: 0.5em;         
+	padding-bottom: 0.3em;
+}
+
+#main-content p {
+    margin: 0px;
+    padding: 0px;
+    padding-top:0.35em;
+    padding-bottom:0.35em;
+}
+
+#main-content pre {
+    background:#FCFCFC none repeat scroll 0 0;
+    border:1px solid #D7D7D7;
+    margin:1em 1.75em;
+    overflow:auto;
+    padding:0.25em;
+}
+
+#main-content ul, #main-content ol {
+    text-align: left;
+    padding-left: 2em;
+}
+
+#main-content img {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-content .entry p {
+    font-size:1.05em;
+}
+
+#main-content .postmetadata {
+    margin:30px 0;
+}
+
+#main-content .smallattachment {
+    float:left;
+    margin:5px 5px 5px 0;
+    text-align:center;
+    width:128px;
+}
+
+#main-content .attachment {
+    margin:5px 0;
+    text-align:center;
+}
+
+#credits {
+    font-style:italic;
+}
+
+#credits a:hover {
+    text-decoration: underline;
+}
+
+#uoftwordmark {
+    text-align:center;
+}
+
+#funders-links {
+    border: 1px solid #509832;
+    text-align: center;
+    width: 100px;
+    margin:5px;
+    margin-left:20px;
+    float: right;
+}
+
+#funders-links img {
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: white;
+}
+
+#funders-links a img:hover{
+    border: 2px solid #54820B;
+    text-decoration: none;
+    background-color: white;
+}
+
+#sidebar {
+    margin:0px;
+    padding:0px 20px 10px 20px;/*top right bottom left*/
+    -x-system-font:none;
+    font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
+    font-size:1em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    float:right;
+    width:19%;
+    text-align:left;
+    border-left: solid 1px #ada;
+}
+
+#sidebar h2 {
+    font-family:'Lucida Grande',Verdana,Sans-Serif;
+    font-size:1.2em;
+    margin:5px 0 0;
+    padding:0;
+    font-style: italic;
+}
+
+#sidebar a {
+    color : #206802;
+}
+
+#sidebar a:hover {
+    color : #54820B;
+    background-color: #C5DE90;
+}
+
+#sidebar ul, #sidebar ul ol {
+margin:0;
+padding:0;
+}
+
+#sidebar ul li {
+list-style-image:none;
+list-style-type:none;
+margin-bottom:15px;
+}
+
+#sidebar ul p, #sidebar ul select {
+margin:5px 0 8px;
+}
+
+#sidebar ul ul, #sidebar ul ol {
+margin:5px 0 0 10px;
+}
+
+#sidebar ul ul ul, #sidebar ul ol {
+margin:0 0 0 10px;
+}
+
+#sidebar ul ul li, #sidebar ul ol li {
+margin:3px 0 0;
+padding:0;
+}
+
+#sidebar #searchform #s {
+    padding:2px;
+    width:108px;
+}
+
+#sidebar #searchsubmit {
+	padding:1px;
+}
+
+#sidebar form {
+margin:0;
+}
+
+#searchform {
+margin:10px auto;
+padding:5px 3px;
+text-align:center;
+}
+
+#page {
+    border:1px solid #959596;
+    text-align:left;
+}
+
+#headerimg {
+    height:192px;
+    margin:7px 9px 0;
+    width:740px;
+}
+
+#footer {
+	clear:both;
+	margin:0;
+	padding:0;
+	margin-left:10px;
+	margin-right:10px;
+	border-top: 2px solid #00AEEF;
+}
+
+#footer p {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#acknowledgements {
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+#headerimg .description {
+    font-size:1.2em;
+    text-align:center;
+}
+
+
+.platform_list li {
+    display: inline;
+}
+
+.off-left {
+    position: absolute;
+    left: -999px;
+    width: 990px;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.post h2, .post h3 {
+    font-size: 125%;
+    color:#206802;
+}
+
+.widecolumn {
+    margin-right: 22px !important;
+}
+
+.narrowcolumn {
+    margin-right: 25% !important;
+}
+
+.culturall2-logo img {
+    width: 80px;
+}
+
+.thread-alt {
+background-color:#F8F8F8;
+}
+
+.thread-even {
+background-color:white;
+}
+
+.depth-1 {
+    border:1px solid #DDDDDD;
+}
+
+.even, .alt {
+    border-left:1px solid #DDDDDD;
+}
+
+.entry p a:visited {
+    color:#B85B5A;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+    -x-system-font:none;
+    font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
+    font-size:0.9em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+}
+
+.commentlist li ul li {
+    font-size:1em;
+}
+
+.commentlist li {
+font-weight:bold;
+}
+
+.commentlist li .avatar {
+    background:#FFFFFF none repeat scroll 0 0;
+    border:1px solid #EEEEEE;
+    float:right;
+    padding:2px;
+}
+
+.commentlist cite, .commentlist cite a {
+    font-size:1.1em;
+    font-style:normal;
+    font-weight:bold;
+}
+
+.commentlist p {
+font-weight:normal;
+line-height:1.5em;
+text-transform:none;
+}
+
+#commentform p {
+font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
+}
+
+.commentmetadata {
+font-weight:normal;
+}
+
+#wp-calendar #prev a, #wp-calendar #next a {
+    font-size:9pt;
+}
+
+#wp-calendar a {
+    text-decoration:none;
+}
+
+#wp-calendar caption {
+    -x-system-font:none;
+    font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
+    font-size:1.3em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:bold;
+    line-height:normal;
+    text-align:center;
+}
+
+#wp-calendar th {
+font-style:normal;
+text-transform:capitalize;
+}
+
+.post {
+    margin:0px;
+    padding:0px;
+    margin-bottom:10px;
+    /*text-align:justify;*/
+}
+
+.post hr {
+    display:block;
+}
+
+/*.postmetadata {
+    clear:both;
+}*/
+
+.clear {
+clear:both;
+}
+
+.alignright {
+float:right;
+}
+
+.alignleft {
+float:left;
+}
+
+html > body .entry ul {
+/*    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-left:0;
+    text-indent:-10px;*/
+    padding:0 0 0 10px;
+}
+
+html > body .entry li {
+margin:7px 0 8px 10px;
+}
+
+#sidebar ul ul li:before {
+    content:"» ";
+}
+
+.entry ol {
+margin:0;
+padding:0 0 0 35px;
+}
+
+.entry ol li {
+margin:0;
+padding:0;
+}
+
+.postmetadata ul, .postmetadata li {
+    display:inline;
+    list-style-image:none;
+    list-style-type:none;
+}
+
+ol li, #sidebar ul ol li {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:decimal;
+}
+
+.entry form {
+    text-align:center;
+}
+
+select {
+    width:130px;
+}
+
+#commentform input {
+    margin:5px 5px 1px 0;
+    padding:2px;
+    width:170px;
+}
+
+#commentform {
+    margin:5px 10px 0 0;
+}
+
+#commentform textarea {
+    padding:2px;
+    width:100%;
+}
+
+#respond:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+#commentform #submit {
+float:right;
+margin:0 0 5px auto;
+}
+
+.alt {
+margin:0;
+padding:10px;
+}
+
+.commentlist {
+padding:0;
+text-align:justify;
+}
+
+.commentlist li {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin:15px 0 10px;
+padding:5px 5px 10px 10px;
+}
+
+.commentlist li ul li {
+margin-left:10px;
+margin-right:-5px;
+}
+
+.commentlist p {
+margin:10px 5px 10px 0;
+}
+
+.children {
+padding:0;
+}
+
+#commentform p {
+margin:5px 0;
+}
+
+.nocomments {
+margin:0;
+padding:0;
+text-align:center;
+}
+
+.commentmetadata {
+    display:block;
+    margin:0;
+}
+
+#wp-calendar {
+    empty-cells:show;
+    margin:10px auto 0;
+    width:155px;
+}
+
+#wp-calendar #next a {
+    padding-right:10px;
+    text-align:right;
+}
+
+#wp-calendar #prev a {
+    padding-left:10px;
+    text-align:left;
+}
+
+#wp-calendar a {
+    display:block;
+}
+
+#wp-calendar caption {
+    text-align:center;
+    width:100%;
+}
+
+#wp-calendar td {
+    padding:3px 0;
+    text-align:center;
+}
+
+#wp-calendar td.pad:hover {
+    background-color:#FFFFFF;
+}
+
+acronym, abbr, span.caps {
+    cursor:help;
+}
+
+acronym, abbr {
+    border-bottom:1px dashed #999999;
+}
+
+blockquote {
+    border-left:5px solid #DDDDDD;
+    margin:15px 30px 0 10px;
+    padding-left:20px;
+}
+
+blockquote cite {
+    display:block;
+    margin:5px 0 0;
+}
+
+.center {
+    text-align:center;
+}
+
+.hidden {
+    display:none
+}
+
+hr {
+    display:none;
+}
+
+a img {
+    border:medium none;
+}
+
+.navigation {
+    margin:0px;
+    padding:0px;
+    text-align:center;
+    height: 30px;
+}
+
+.aligncenter, div.aligncenter {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.wp-caption {
+    -moz-border-radius-bottomleft:3px;
+    -moz-border-radius-bottomright:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-topright:3px;
+    background-color:#F3F3F3;
+    border:1px solid #DDDDDD;
+    margin:10px;
+    padding-top:4px;
+    text-align:center;
+}
+
+.wp-caption img {
+    border:0 none;
+    margin:0;
+    padding:0;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
+
+.description {
+    color:#666666;
+    font-size: 48%;
+}
+
+.FAQ_Question {
+    font-weight:bold;
+    font-size:130%;
+    margin-top:10px;
+    color: #004F94;
+}
+
+#mainlegend { /* for contact form */
+	display: none;
+}
+
+.table {
+	display: table;
+	margin-bottom: 0.6em;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+	vertical-align: top;
+	padding: 0.2em;
+}
+
+.col-right {
+	padding-left: 28px;
+	width: 50%;
+}
+
+.col-left {
+	padding-right: 28px;
+	width: 50%;
+}
+
+.cell h4 {
+	padding-left: 0 !important;
+}
+
+.project-thumb-cell {
+	padding-right: 0.6em;
+}
+
+.project-thumb {
+	width: 64px;
+}
+
+.project-thumb-cell a img {
+    border: solid 2px white !important;
+}
+
+.project-thumb-cell a:hover img {
+    border: solid 2px #008FD4 !important;
+}

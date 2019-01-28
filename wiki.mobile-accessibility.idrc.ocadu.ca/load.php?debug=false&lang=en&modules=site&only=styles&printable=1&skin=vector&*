@@ -1,0 +1,2 @@
+th{color:#ffffff;background-color:#0075d1}td{background-color:#eeeeee}td,th{border:solid white 2px;padding:6px}.ibox td,.ibox th,.toc td,.toc th,#userloginForm td,#userloginForm th{background:none;border:none}.tocnumber{display:none}
+/* cache key: 8b02c92c:resourceloader:filter:minify-css:7:45374f21c045214b856b64910caf9b19 */

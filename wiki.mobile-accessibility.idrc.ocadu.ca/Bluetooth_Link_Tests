@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Bluetooth Link Tests - IDRC Mobile Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="generator" content="MediaWiki 1.23.6" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="IDRC Mobile Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.mobile-accessibility.idrc.ocadu.ca/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="IDRC Mobile Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: 8b02c92c:resourceloader:filter:minify-css:7:c441a0dba31bcfe63124c41ccf683551 */</style>
+<script src="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Bluetooth_Link_Tests","wgTitle":"Bluetooth Link Tests","wgCurRevisionId":453,"wgRevisionId":453,"wgArticleId":32,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Bluetooth_Link_Tests","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: 8b02c92c:resourceloader:filter:minify-js:7:8d7e903275f4fc5a5ad6387c1fbe7337 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Bluetooth_Link_Tests skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Bluetooth Link Tests</span></h1>
+						<div id="bodyContent">
+								<div id="siteSub">From IDRC Mobile Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>The table below describes the tests performed with the Arduino board in order to test the robustness and limitations of a bluetooth link in real environments. These tests are performed a few times and approximate ranges are provided in the results.
+</p><p><b>Table 1. List of tests to be performed</b>
+</p>
+<table class="wikitable" cellpadding="5" border="1">
+
+<tr>
+<th> Summary
+</th>
+<th> Procedure
+</th>
+<th> Result
+</th></tr>
+<tr>
+<td> Maximum connection distance
+</td>
+<td> Pair the arduino board with a bluetooth device and physically test how far the devices can be from each other before connection breaks
+</td>
+<td> In order to establish a connection, the devices must be within 4-5m. A failed attempt will cause bluetooth.BluetoothError: (112, 'Host is down'). If a connection is established, the bluetooth devices lose connection after around 5-6m without interference. It seems that by spamming the keys on the host, the connection distance is reduced, but this could also be because of hand positioning. The host usually takes around 15s before the red disconnect light starts blinking. The receiver may take from 0-30s more before it throws a bluetooth.BluetoothError: (110, 'Connection timed out')
+</td></tr>
+<tr>
+<td> Maximum idle time
+</td>
+<td> Pair the arduino board and send/receive data in increasing intervals until connection breaks.
+</td>
+<td> It seems that if within range, there is no timeout. It may take around 15s if they are out of range.
+</td></tr>
+<tr>
+<td> Auto re-connect
+</td>
+<td> Once connection is lost, test the conditions under which automatic re-connection can occur.
+</td>
+<td> A disconnect is not instantaneous. Data might be lost if the devices are out of range, but if they are then brought within 3-4m of each other before any of them registers a timeout, then the connection is reestablished and no errors are thrown. However, if the red light starts blinking, the they will not reconnect by themselves.
+</td></tr>
+<tr>
+<td> Noisy wireless environments
+</td>
+<td> Test all the above parameters within noisy wireless environments.
+</td>
+<td> A xbox controller trying to connect to the xbox placed in the same room as the bluetooth devices will severely impact the distances where connections can be made. Reliable connections can be made down to half a meter, but anything further is a hit and miss, sometimes disconnecting constantly, sometimes having a 50% chance of disconnecting depending on how close the controller is to the devices, and sometimes just positioning. Once a connection is established, the controller seems to have no impact on performance.
+</td></tr>
+<tr>
+<td> Wheelchair field tests
+</td>
+<td> This set of tests will determine the basic operating conditions and limitations in the user's environment
+</td>
+<td> TODO
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.008 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 1/1000000
+Preprocessor generated node count: 4/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key 8b02c92c:pcache:idhash:32-0!*!*!*!*!*!* and timestamp 20190107093738 and revision id 453
+ -->
+</div>								<div class="printfooter">
+				Retrieved from "<a href="http://wiki.mobile-accessibility.idrc.ocadu.ca/index.php?title=Bluetooth_Link_Tests&amp;oldid=453">http://wiki.mobile-accessibility.idrc.ocadu.ca/index.php?title=Bluetooth_Link_Tests&amp;oldid=453</a>"				</div>
+												<div id='catlinks' class='catlinks catlinks-allhidden'></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-anonuserpage"><a href="/User:205.211.169.49" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">205.211.169.49</a></li><li id="pt-anontalk"><a href="/User_talk:205.211.169.49" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Bluetooth+Link+Tests" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li><li id="pt-createaccount"><a href="/Special:RequestAccount">Request account</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/Bluetooth_Link_Tests"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Bluetooth_Link_Tests&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/Bluetooth_Link_Tests" >Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="/index.php?title=Bluetooth_Link_Tests&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Bluetooth_Link_Tests&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label"><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search IDRC Mobile Wiki [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel">
+					<div id="p-logo" role="banner"><a style="background-image: url(http://mobile-accessibility.idrc.ocadu.ca/media/images/IDI_wiki.png);" href="/Main_Page"  title="Visit the main page"></a></div>
+				<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+	<h3 id='p-navigation-label'>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+	<h3 id='p-tb-label'>Tools</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Bluetooth_Link_Tests" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Bluetooth_Link_Tests" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="/index.php?title=Bluetooth_Link_Tests&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="/index.php?title=Bluetooth_Link_Tests&amp;oldid=453" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/index.php?title=Bluetooth_Link_Tests&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 28 June 2010, at 15:27.</li>
+											<li id="footer-info-viewcount">This page has been accessed 5,968 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/IDRC_Mobile_Wiki:Privacy_policy" title="IDRC Mobile Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/IDRC_Mobile_Wiki:About" title="IDRC Mobile Wiki:About">About IDRC Mobile Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/IDRC_Mobile_Wiki:General_disclaimer" title="IDRC Mobile Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script src="http://wiki.mobile-accessibility.idrc.ocadu.ca/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":106});
+}</script>
+	</body>
+</html>
