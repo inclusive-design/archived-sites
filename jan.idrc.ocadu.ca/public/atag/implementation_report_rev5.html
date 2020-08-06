@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>ATAG 2.0 Implementation Report</title>
+<meta http-equiv="Content-Type"
+content="text/html; charset=utf-8" />
+<style type="text/css">
+/*<![CDATA[*/
+
+.editornotes {
+    BORDER-RIGHT: red 1px solid;
+	BORDER-TOP: red 1px solid; 
+	BORDER-LEFT: red 1px solid; 
+	BORDER-BOTTOM: red 1px solid;
+}
+
+DL {
+    MARGIN-BOTTOM: 1em
+}
+table
+{
+    width: 100%
+}
+.at-least-one {background-color:#FFFF00}
+.several {background-color:#99FFFF}
+.many {background-color:#33FF00}
+.none-confirmed {background-color:red; color:white}
+ 
+.glossary-adapted {	font-weight:normal;
+	color:#666666;
+	font-size:x-small;
+}
+strong.handle {  font-size: .9em;
+}
+
+.termdef {border-bottom:1px dotted #585858;
+color:#000000 !important;
+text-decoration:none;
+
+
+/*]]>*/
+</style>
+<link href="http://www.w3.org/StyleSheets/TR/base.css" type="text/css" rel="stylesheet" />
+<!--<link href="http://www.w3.org/StyleSheets/TR/W3C-WD.css" type="text/css" rel="stylesheet" />-->
+<style type="text/css">
+<!--
+.style1 {font-style: italic}
+-->
+</style>
+</head>
+<body>
+<div class="hide"> 
+  <div class="navbar">
+    <a href="http://www.w3.org/"><img height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home" width="72" /></a></div>
+</div>
+
+<div class="head">
+  <h1 id="title">ATAG 2.0 Implementation Report</h1>
+  <h2>DD MMM YYYY  </h2>
+</div>
+
+  <dl>
+    <dt>Editors:</dt>
+    <dd>&nbsp;</dd>
+    <dd>Jan Richards - <abbr title="Adaptive Technology Research Center">ATRC</abbr>, University of Toronto</dd>
+</dl>
+
+<h2>Rating Information</h2>
+<dl>
+  <dt>Rating Scale </dt>
+  <dd>C: Complete Implementation </dd>
+  <dd>AC: Almost Complete Implementation, almost all requirements satisfied or bugs need to be fixed </dd>
+  <dd>PI: Partial Implementation, some requirements satisfied </dd>
+  <dd>NI: Not Implemented </dd>
+  <dd>NR: Not Rated </dd>
+  <dd>NA: Not Applicable </dd>
+</dl>
+<h2>Authoring Tools</h2>
+<p><strong>@@IMPORTANT NOTES:</strong></p>
+<ul>
+  <li><strong>The implementations listed here have NOT been double-checked and do NOT represent endorsement by the WAI-AUWG, WAI, W3C or anyone else.</strong></li>
+  <li></li>
+</ul>
+<table width="200" border="1">
+  <tr>
+    <th>Handle</th>
+    <th>Details</th>
+    <th>Notes and URIs </th>
+    <th>Contributor(s) </th>
+  </tr>
+  <tr>
+    <td>DreamWeaver8</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Jan Richards </td>
+  </tr>
+  <tr>
+    <td>Flash8</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Jan Richards </td>
+  </tr>
+  <tr>
+    <td>XStandard2.1</td>
+    <td>XStandard 2.1 used to produce XHTML 1.0 </td>
+    <td>&nbsp;</td>
+    <td>Vlad Alexander, Roberto Scano</td>
+  </tr>
+  <tr>
+    <td>WebAIM WAVE</td>
+    <td>&nbsp;</td>
+    <td>http://wave.webaim.org/</td>
+    <td>Jan Richards </td>
+  </tr>
+  <tr>
+    <td>AChecker</td>
+    <td>Checking HTML4.01</td>
+    <td>http://achecker.ca/</td>
+    <td>Greg Gay, Jan Richards </td>
+  </tr>
+  <tr>
+    <td>Office2010</td>
+    <td>&nbsp;</td>
+    <td>http://blogs.technet.com/office2010/archive/2010/01/07/office-2010-accessibility-investments-document-accessibility.aspx</td>
+    <td>Jan Richards </td>
+  </tr>
+  <tr>
+    <td>TinyMCE3.2</td>
+    <td>TinyMCE v.3.2.x with Accessibility plugin producing XHTML 1.0</td>
+    <td><ul>
+      <li>Base application (http://tinymce.moxiecode.com/download.php)</li>
+      <li>Accessibility plugin (http://wiki.moxiecode.com/index.php/TinyMCE:Accessibility)</li>
+    </ul></td>
+    <td>Jan Richards </td>
+  </tr>
+  <tr>
+    <td>Amaya</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Jeanne Spellman </td>
+  </tr>
+</table>
+<h2>Implementations by Checkpoints and Success Criteria</h2>
+<h3>Applicability Notes:</h3>
+<h4>For PART A: Make the authoring tool user interface accessible:</h4>
+<ol>
+  <li><strong class="handle">Scope of authoring tool user interface:</strong> The Part
+    A success criteria apply to all aspects of the <a href="Overview.html#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">authoring tool user interface</a> that are under the control of the <a class="termdef" href="Overview.html#def-Developer" title="definition: authoring tool developers">authoring tool developer</a>. This includes <a class="termdef" href="Overview.html#def-View" title="definition: view">views</a> of the <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> being edited, and features that are independent of the  content being edited, such as menus, button bars, status bars, user preferences, <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documentation</a>, etc.</li>
+  <li><strong class="handle">Reflected web content accessibility problems:</strong> The <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> is responsible for ensuring that <a href="Overview.html#def-Editing-View" title="definition: editing views" class="termdef">editing views</a> display the web content being edited in a way that is accessible to <a class="termdef" href="Overview.html#def-Author" title="definition: authors">authors</a> with disabilities (e.g., ensuring that a text alternative in the  content can be <a class="termdef" href="Overview.html#def-Programmatically-Determined" title="definition: programmatically determined">programmatically determined</a>). However, where an <a href="Overview.html#def-Authoring-Interface-Accessibility-Problem" title="definition: authoring tool user interface accessibility proble" class="termdef">authoring tool user interface accessibility problem</a> is caused directly by a <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problem</a> in the  content being edited (e.g., if an image in the content lacks a label), then this would not be considered a deficiency in the accessibility of the <a href="Overview.html#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">authoring tool user interface</a>.</li>
+  <li><strong class="handle">User
+    agent features: </strong><a href="Overview.html#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)" class="termdef">Web-based authoring tools</a> may rely on <a class="termdef" href="Overview.html#def-User-Agent" title="definition: user agent">user
+      agent</a> features (e.g., keyboard navigation, find functions, display preferences, undo features, etc.) to satisfy success criteria. If a <a href="Overview.html#Conf-Claim">conformance
+        claim</a> is made, the claim  cites the user
+    agent.</li>
+  <li><strong class="handle">Features for meeting Part A must be accessible:</strong> The Part
+    A success criteria apply to the entire <a href="Overview.html#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">authoring tool user interface</a>, including any features added to meet the success criteria in Part A (e.g.,  documentation, search functions, etc.). The only exemption is for <a class="termdef" href="Overview.html#def-Preview" title="definition: preview">preview</a> features, 
+    as long as they meet <a href="Overview.html#gl_a37">Guideline A.3.7</a>. Previews are treated differently than editing views because all authors, including those with disabilities, benefit when preview features accurately reflect the actual functionality of user
+    agents. </li>
+</ol>
+<h4>For PART B: Support the production of accessible content :</h4>
+<ol>
+  <li><strong class="handle">Author availability:</strong> Any Part B success criteria that refer to <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> only apply during <a href="Overview.html#def-Authoring-Session" title="definition: authoring session" class="termdef">authoring sessions</a>.</li>
+  <li><strong class="handle">Applicability after the end of an authoring session:</strong> For <a class="termdef" href="Overview.html#def-Content-Author-Gen" title="definition: author generated content">author-generated content</a>, the requirements of Part B only apply during authoring sessions. For example, if the author includes a third-party feed in their <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a>, the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> is not required to provide <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checking</a> for <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a> in that feed after the <a href="Overview.html#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">end of the authoring session</a>. In contrast, for <a href="Overview.html#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically-generated content</a>, Part B continues to apply after the end of the authoring session. For example, if the site-wide <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a> of a content management system are updated, these would be required to meet the accessibility requirements for automatically-generated content. </li>
+  <li><strong class="handle">Authoring systems: </strong>As per the ATAG 2.0 definition of <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a>, several software tools (identified in any <a href="Overview.html#conf-claim">conformance claim</a>) can be used in conjunction to meet the requirements of Part B. (e.g., an   authoring tool could make use of a third-party software accessibility checking and <a href="Overview.html#def-Repairing" title="definition: repairing" class="termdef">repair</a> tool).</li>
+  <li><strong class="handle">Features for meeting Part B must be accessible:</strong> The <a href="Overview.html#part_a">Part
+    A</a> success criteria apply to the entire <a href="Overview.html#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">authoring tool user interface</a>, including any features added to meet the success criteria in Part B (e.g.,  checking  tools, repair tools, tutorials, documentation, etc.). </li>
+  <li><strong class="handle">Multiple author roles:</strong> Some <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> include multiple <a href="Overview.html#def-Author" title="definition: authors" class="termdef">author</a> roles, each with different views and content editing permissions (e.g.,  a content management system may separate the roles of designers, content  authors, and quality assurers). In these cases, the Part B success  criteria apply to the authoring tool as a whole, not to the view  provided to any particular author role. </li>
+</ol>
+<h3>Numbers of Implementations</h3>
+<ul>
+  <li class="none-confirmed"><strong>@None-confirmed</strong></li>
+  <li class="at-least-one"><strong>@At-least-one</strong></li>
+  <li><strong>@Several</strong></li>
+  <li><strong>@Many</strong></li>
+</ul>
+<h3>Level A Success Criteria </h3>
+<div class="table">
+  <table summary="Table of Level A Success Criteria, sorted by success criteria number." border="1">
+    <tr class="checkhead">
+      <th width="25%">Guideline</th>
+      <th width="25%">Success Criteria</th>
+      <th width="50%" valign="top">Implementations Info </th>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.1.1 [For the authoring tool user interface] Ensure that web-based functionality is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.1.1.1 Web-Based Accessible (WCAG Level A): </strong><a class="termdef" href="Overview.html#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">Web-based authoring tool user interfaces</a> conform to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one
+    </strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+    </ul>
+  </li>
+  <li><em>MoodleLMS?, DrupalCMS?, ATutorLCMS? DeFactoCMS?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.1.2 [For the authoring tool user interface] Ensure that non-web-based functionality is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.1.2.1 Non-Web-Based Accessible: </strong><a class="termdef" href="Overview.html#def-Desktop" title="definition: authoring tool user interface (non-Web-Based)">Non-web-based authoring tool user interfaces</a> follow accessibility standards and/or <a class="termdef" href="Overview.html#def-Platform" title="definition: platform">platform</a> conventions that support accessibility.<span class="sc-bullet"><strong class="handle"><br />
+      Note: </strong> If a <a href="Overview.html#conf-claim">conformance claim</a> is made, the claim cites the accessibility standards and/or platform conventions that were followed.</span></span></td>
+      <td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>XStandard2.1 (MSAA support)</li>
+    </ul>
+  </li>
+  <li><em>iPhone apps? Annotate (Steve H)?</em> <em>MS2010?</em> </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.2.1 [For the authoring tool user interface] Make alternative content available to the author.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.2.1.1 Recognized Alternative Content:</strong> If <a class="termdef" href="Overview.html#def-Recognize" title="definition: recognized (by the authoring tool)">recognized</a> <a href="Overview.html#def-Equivalent-Alternatives" title="definition: alternative content" class="termdef">alternative content</a> is available for <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">editing view</a> <a class="termdef" href="Overview.html#def-Content-Renderings" title="definition: content rendering">content renderings</a>, then the <a href="Overview.html#def-Equivalent-Alternatives" title="definition: alternative content" class="termdef">alternative content</a> is provided to <a class="termdef" href="Overview.html#def-Author" title="definition: authors">authors</a>.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2 (via browser) </li>
+      <li>DreamWeaver8</li>
+      <li>XStandard2.1</li>
+      </ul>
+  </li>
+  <li><em>MoodleLMS?, DrupalCMS?, ATutorLCMS? DeFactoCMS?</em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">A.2.2 [For the authoring tool user interface] Editing view presentation can be programmatically determined</span>.</td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.2.2.1 Purpose of Added Presentation:</strong> If an <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">editing view</a> modifies the <a class="termdef" href="Overview.html#def-Presentation" title="definition: presentation">presentation</a> of <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> to provide additional information to <a class="termdef" href="Overview.html#def-Author" title="definition: authors">authors</a>, then that additional information can be <a class="termdef" href="Overview.html#def-Programmatically-Determined" title="definition: programmatically determined">programmatically determined</a>.</span></td>
+      <td valign="top" class="at-least-one"><ul>
+        <li><strong>@At-least-one</strong>
+          <ul>
+            <li>WAVE (adds information icons throughout the checked webpage)</li>
+          </ul>
+        </li>
+        <li><em>XMetal? </em><em>Office2010 spelling? </em></li>
+        </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.2.2.2 Access to Text Presentation (Minimum):</strong> If an <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">editing view</a> (e.g., <a class="termdef" href="Overview.html#def-WYSIWYG" title="definition: WYSIWYG">WYSIWYG</a> view) <a href="Overview.html#def-Content-Renderings" title="definition: content rendering" class="termdef">renders</a> any of the following <a class="termdef" href="Overview.html#def-Presentation" title="definition: presentation">presentation</a> properties for text, then those properties can be <a class="termdef" href="Overview.html#def-Programmatically-Determined" title="definition: programmatically determined">programmatically determined</a>: <span class="sc-bullet"><strong class="handle"><br />
+        (a) Text Font</strong>; and </span> <span class="sc-bullet"><strong class="handle"><br />
+        (b) Text Style</strong> (e.g., italic, bold); and </span> <br />
+        <span class="sc-bullet"><strong class="handle">(c) Text Color</strong>; and </span> <br />
+      <span class="sc-bullet"><strong class="handle">(d) Text Size</strong>.</span></span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>TinyMCE3.2 (via browser)</li>
+    </ul>
+  </li>
+  <li><em>MoodleLMS?, DrupalCMS?, ATutorLCMS? DeFactoCMS? </em><em>(note: Use MSAA Inspect tool to test on Windows) </em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.2.3: Ensure the independence of the authors' display preferences.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.2.3.1 Independence of Display: </strong><a class="termdef" href="Overview.html#def-Author" title="definition: authors">Authors</a> can set their own <a class="termdef" href="Overview.html#def-Display-Settings" title="definition: display settings">display settings</a> for <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">editing views</a> (including <a class="termdef" href="Overview.html#def-WYSIWYG" title="definition: WYSIWYG">WYSIWYG</a> <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view"> views</a>) without affecting the <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> to be <a href="Overview.html#def-Publishing" title="definition: publishing" class="termdef">published</a>.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>TinyMCE3.2 (since browser display settings are used) </li>
+      <li>XStandard2.1</li>
+      <li>DreamWeaver8</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">A.3.1 [For the authoring tool user interface] Provide keyboard access to authoring features.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.1.1 Keyboard Access (Minimum):</strong> All functionality of the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> is operable through a <a class="termdef" href="Overview.html#def-Keyboard-Interface" title="definition: keyboard interface">keyboard interface</a>, except where editing <a class="termdef" href="Overview.html#def-Web-Content-Properties" title="definition: web content properties">web content properties</a> that <a class="termdef" href="Overview.html#def-Encode-Continuous-Input" title="definition: encode continuous input">encode continuous input</a>.<strong class="handle"><br />
+        Note 1:</strong> This exception relates to the nature of web content, not the  usual input technique. For example, setting the path of a freehand curve  is exempt, while setting the endpoints of a straight line is not.<strong class="handle"><br />
+      Note 2:</strong> This should not be interpreted as discouraging mouse input or other input methods in addition to the keyboard interface.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong></li>
+  <li>TinyMCE3.2</li>
+  <li>Dreamweaver8</li>
+  <li><em>MS2010? AtutorLCMS? </em><em>Sakai3.0?</em> <em>DeFactoCMS?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.1.2 </strong><strong class="handle"> No Content Keyboard Traps:</strong> <a class="termdef" href="Overview.html#def-Keyboard-Trap" title="definition: keyboard trap">Keyboard traps</a> are prevented as follows: <br />
+          <span class="sc-bullet"><strong class="handle">(a) In the <a href="Overview.html#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">Authoring Tool User Interface</a>:</strong> If keyboard focus can be moved to a component using the keyboard, then focus can be moved away from that component using standard keyboard navigation commands (e.g., TAB key); and </span> <br />
+          <span class="sc-bullet"><strong class="handle">(b) In <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">Editing Views</a> that <a href="Overview.html#def-Content-Renderings" title="definition: content rendering" class="termdef">Render</a> <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">Web Content</a>:</strong> If an editing view renders web content (e.g., <a class="termdef" href="Overview.html#def-WYSIWYG" title="definition: WYSIWYG">WYSIWYG</a> view), then a <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documented</a> keyboard command is provided that will always restore keyboard focus to a known location (e.g., the menus).</span></span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2 (relying on browser for (b))</li>
+            <li>Dreamweaver8</li>
+            <li>Flash8</li>
+          </ul>
+        </li>
+        <li><em>MoodleLMS?, </em><em>DrupalCMS?, </em><em>ATutorLCMS?</em><em> (relying on browser for (b))</em></li>
+        </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="3" valign="top"><span class="guideline">A.3.2 [For the authoring tool user interface] Provide authors with enough time. </span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.2.1 Data Saved (Minimum):</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> includes <a href="Overview.html#def-Authoring-Session" title="definition: authoring session" class="termdef">authoring session</a> time limits, then the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> saves all submitted content edits made by <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a>.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li><em>ATutorLCMS (Scorm mode?)? </em><em>DrupalCMS? </em><em>MoodleLMS? </em><em>Wikis?</em></li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.2.2 Timing Adjustable: </strong>If a time limit is set by the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a>, then at least one of the following is true: <br />
+          <span class="sc-bullet"><strong class="handle">(a) Turn Off:</strong> <a class="termdef" href="Overview.html#def-Author" title="definition: authors">Authors</a> are allowed to turn off the time limit before encountering it; or</span> <span class="sc-bullet"><strong class="handle"><br />
+(b) Adjust:</strong> Authors are allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or</span> <span class="sc-bullet"><strong class="handle"><br />
+(c) Extend:</strong> Authors are warned before time expires and given at least 20 seconds to extend the time limit with a simple action (e.g., &quot;press the space bar&quot;), and  authors are allowed to extend the time limit at least ten times; or</span> <br />
+<span class="sc-bullet"><strong class="handle">(d) Real-time Exception:</strong> The time limit is a required part of a real-time event (e.g., a collaborative authoring system), and no alternative to the time limit is possible; or</span> <br />
+<span class="sc-bullet"><strong class="handle">(e) Essential Exception:</strong> The time limit is essential and extending it would invalidate the activity; or</span> <span class="sc-bullet"><strong class="handle"><br />
+(f) 20 Hour Exception:</strong> The time limit is longer than 20 hours.</span></span></td>
+      <td valign="top" class="none-confirmed"><ul>
+        <li><strong>@None-confirmed</strong>
+          <ul>
+            <li><em>ATutorLCMS (Scorm mode?)?</em></li>
+            <li><em>DrupalCMS?</em><em>MoodleLMS? </em><em>Wikis?</em></li>
+          </ul>
+        </li>
+        </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.2.3 Static Pointer Targets:</strong> User interface components that accept pointer input are either stationary or <span class="sc-bullet"><a class="termdef" href="Overview.html#def-Author" title="definition: authors">authors</a></span> can pause the movement</span>.</td>
+      <td valign="top"><ul>
+        <li><strong>@Many</strong>
+          <ul>
+            <li>MS2010</li>
+            <li>Dreamweaver8</li>
+            <li>Acrobat</li>
+            <li>etc.</li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.3.3 [For the authoring tool user interface] Help authors avoid flashing that could cause seizures.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.3.1 Static View Option:</strong> <a href="Overview.html#def-Content-Renderings" title="definition: content rendering" class="termdef">Rendering</a> of time-based content (e.g., animations) in <a href="Overview.html#def-Editing-View" title="definition: editing view" class="termdef">editing views</a> can be turned off.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>Flash8 (Timeline only plays on user request)</li>
+      </ul>
+  </li>
+  <li><em>Maybe some web-based tools if rendering of dynanic objects turned off in browser </em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">A.3.4 [For the authoring tool user interface] Enhance navigation and editing via content structure.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.4.1 Edit by Structure:</strong> <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">Editing views</a> for <a href="Overview.html#def-Structured-Web-Content" title="definition: structured web content" class="termdef">structured web content</a> include editing mechanism(s) that can make use of the structure. </span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2 (using &quot;Path&quot; feature) </li>
+      <li>DreamWeaver8</li>
+    </ul>
+  </li>
+  <li><em>Amaya? (JS) </em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.4.2 Navigate By Structure:</strong> <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">Editing views</a> for <a href="Overview.html#def-Structured-Web-Content" title="definition: structured web content" class="termdef">structured web content</a> include navigation mechanism(s) that can make use of the structure.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2 (using &quot;Path&quot; feature) </li>
+            <li>DreamWeaver8 (&quot;Edit&gt;Select Parent Tag&quot;, &quot;Edit&gt;Select Child&quot;) </li>
+          </ul>
+        </li>
+        <li><em>Amaya? (JS) </em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">A.3.7 [For the authoring tool user interface] Ensure that previews are as accessible as existing user agents.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.7.1 Return Mechanism:</strong> If a <a class="termdef" href="Overview.html#def-Preview" title="definition: preview">preview</a> is provided, then <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> can return from the preview using only keyboard commands.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>TinyMCE3.2 (by switching browser windows) </li>
+      <li>DreamWeaver8 (by switching applications)</li>
+    </ul>
+  </li>
+  <li><em>Amaya? (JS) </em><em>ATutorLCMS?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.7.2 Preview: </strong>If a <a class="termdef" href="Overview.html#def-Preview" title="definition: preview">preview</a> is provided, then at least one of the following is true:<span class="sc-bullet"><strong class="handle"><br />
+(a) Third-Party User Agent:</strong> The preview makes use of an existing third-party <a class="termdef" href="Overview.html#def-User-Agent" title="definition: user agent">user agent</a>; or </span> <br />
+<span class="sc-bullet"><strong class="handle">(b) UAAG (Level A):</strong> The preview conforms to the User Agent Accessibility Guidelines Level A <cite>[<a href="Overview.html#ref-UAAG">UAAG</a>]</cite>.</span></span></td>
+      <td valign="top"><ul>
+        <li><strong>@Many (by (a)</strong>)
+          <ul>
+            <li>XStandard2.1 (by (a)) </li>
+            <li>TinyMCE3.2 (by (a)) </li>
+            <li>DreamWeaver8 (by (a)) </li>
+            <li>ATutorLCMS? (by (a)) </li>
+          </ul>
+        </li>
+        <li><em>Amaya? (JS) </em></li>
+        </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">A.4.1 [For the authoring tool user interface] Help users avoid and correct mistakes.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.4.1.1 Undo Content Changes: </strong> <a href="Overview.html#def-Authoring-Action" title="definition: authoring actions" class="termdef">Authoring actions</a> are either <a href="Overview.html#def-Reversible-Actions" title="definition: reversible actions" class="termdef">reversible</a> by an &quot;undo&quot; function or include a warning to the <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> that the <a href="Overview.html#def-Authoring-Action" title="definition: authoring actions" class="termdef">action</a> is <a href="Overview.html#def-Irreversible-Actions" title="definition: irreversible actions" class="termdef">irreversible</a>. <br />
+        <span class="sc-bullet"><strong class="handle">Note 1:</strong> It is acceptable to collect a series of text entry actions (e.g., typed words, a series of backspaces) into a single reversible authoring action.</span> <br />
+      <span class="sc-bullet"><strong class="handle">Note 2:</strong> It is acceptable for certain committing actions (e.g., &quot;save&quot;, &quot;publish&quot;) to  make all previous authoring actions irreversible.</span></span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>XStandard2.1</li>
+      <li>TinyMCE3.2</li>
+      <li>DreamWeaver8 (&quot;Edit&gt;Undo&quot;) </li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.4.1.2 Undo Setting Changes:</strong> Actions that modify <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> settings are either <a href="Overview.html#def-Reversible-Actions" title="definition: reversible actions" class="termdef">reversible</a> or include a warning to <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> that the action is <a href="Overview.html#def-Irreversible-Actions" title="definition: irreversible actions" class="termdef">irreversible</a>.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Many</strong>
+          <ul>
+            <li>XStandard2.1</li>
+            <li>DreamWeaver8 (all settings are reversible) </li>
+          </ul>
+        </li>
+        </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.4.2 [For the authoring tool user interface] Document the user interface including all accessibility features.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.4.2.1 Document Accessibility Features:</strong> All features that are specifically required to meet <a href="Overview.html#part_a">Part A</a> of this document (e.g. keyboard shortcuts, text search, etc.) are <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documented</a>.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>MS2010</li>
+    </ul>
+  </li>
+  <li><em>DreamWeaver8?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline"> B.1.1 Support web content technologies that enable the creation of content that is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.1.1 Accessible Content Production (WCAG Level A):</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> can use the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> to produce <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> that conforms to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>XStandard2.1</li>
+      <li>TinyMCE3.2</li>
+      <li>DreamWeaver8</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">B.1.2 Ensure that the authoring tool preserves accessibility information.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.2.1 Preserve Accessibility Information (Minimum):</strong> Any <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility information</a> (<a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A) <a href="Overview.html#def-Recognize" title="definition: recognized (by the authoring tool)" class="termdef">recognized</a> in the input to any <a class="termdef" href="Overview.html#def-Transformation" title="definition: transformation">web content transformation</a> is preserved as accessibility information in the output, if allowed by the <a href="Overview.html#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a> of the output.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>Atutor (transformations from IEEE LOM to SCORM package etc.)</li>
+      <li>Acrobat (when exporting PDF from MS Word format) </li>
+    </ul>
+  </li>
+  <li><em>TinyMCE when copying from MS Word? Final Cut Pro preserving captions? </em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.2.2 End Product Cannot Preserve Accessibility Information:</strong> If the <a href="Overview.html#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a> of the output of a <a class="termdef" href="Overview.html#def-Transformation" title="definition: transformation">web content transformation</a> cannot preserve <a href="Overview.html#def-Recognize" title="definition: recognized (by the authoring tool)" class="termdef">recognized</a> <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility information</a> (<a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level  A) (e.g., saving a structured graphic to a raster image format), then at least one of the following are true:<span class="sc-bullet"><strong class="handle"><br />
+(a) Option to Save:</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> have the <a class="termdef" title="definition: options" href="Overview.html#def-Option">option</a> to save the accessibility information in another way (e.g., as a &quot;comment&quot;, as a backup copy of the input); or </span> <span class="sc-bullet"><strong class="handle"><br />
+(b) Warning:</strong> Authors are warned that this will result in <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a> in the output.</span></span></td>
+      <td valign="top"><ul>
+        <li><strong>@Many (by (a))</strong> 
+          <ul>
+            <li>...</li>
+          </ul>
+        </li>
+        </ul>
+      <p>&nbsp; </p></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.1.3 Ensure that automatically generated content is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.3.1  Accessible Auto-Generated Content (WCAG Level A):</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> <a href="Overview.html#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically generates content</a>, then that <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> conforms to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A prior to <a href="Overview.html#def-Publishing" title="definition: publishing" class="termdef">publishing</a>.<span class="sc-bullet"><strong class="handle"><br />
+      Note:</strong> This success criterion only  applies to the automated behavior specified by the <a href="Overview.html#def-Developer" title="definition: authoring tool developer" class="termdef">authoring tool developer</a>. It does not apply when actions of <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> prevent  generation of <a class="termdef" href="Overview.html#def-Accessible-Web-Content" title="definition: accessible web content">accessible web content</a> (e.g., <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> might set less  strict preferences, ignore prompts for <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility information</a>,  provide faulty accessibility information, write their own automated  scripts, etc.).</span></span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one:</strong>
+    <ul>
+      <li>TinyMCE3.2    </li>
+    </ul>
+  </li>
+  <li><em>ATutorLCMS? </em><em>De Facto CMS? </em><em>Dreamweaver8?</em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="3" valign="top"><span class="guideline">B.2.1 Guide authors to create accessible content.</span></td>
+      <td valign="top"><span class="sc-txt"><span class="sc"><strong class="handle">B.2.1.1 Decision Support:</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides the <a class="termdef" title="definition: options" href="Overview.html#def-Option">option</a> of producing a <a href="Overview.html#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a> for <a href="Overview.html#def-Publishing" title="definition: publishing" class="termdef">publishing</a> for which the  authoring tool does not <a href="Overview.html#conf-techs-produced">provide support for the production of  accessible content</a>, then both of the following are true:<span class="sc-bullet"><strong class="handle"><br />
+        (a) Warning: </strong><a class="termdef" href="#def-Author" title="definition: author">Authors</a> are warned that the authoring tool does not provide  support for the production of accessible content for that technology; and </span> <span class="sc-bullet"><strong class="handle"><br />
+        (b) List: </strong>From the warning, authors can access a list of technologies for which the authoring tool does <a href="#conf-techs-produced">provide support  for the production of accessible content</a>.</span></span><br />
+      </span></td>
+<td valign="top" class="none-confirmed"><ul>
+  <li><strong>@None-confirmed</strong></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.1.2 Set Accessible Properties:</strong> Mechanisms that set the properties of <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> (e.g., attribute values, etc.) also include the ability to set the accessibility-related properties.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2</li>
+            <li>Dreamweaver8<br />
+                <img src="B212a.png" alt="Screenshot of Dreamweaver8 image properties pane includes 'alt' attribute" width="366" height="37" /></li>
+            <li>Adobe Acrobat<br />
+                <img src="B212_acrobat.png" alt="Screenshot of the touchup properties dialog showing the 'alternate text' field" width="278" height="115" />          </li>
+            </ul>
+        </li>
+        <li><em>ATutorLCMS? </em><em>De Facto CMS?</em><br />
+          </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.1.3 Other Technologies:</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> can insert <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> that it cannot subsequently edit, then the <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> can associate <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information"> accessibility information</a> with that web content. </span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2</li>
+            </ul>
+        </li>
+        <li><em>Dreamweaver8 (e.g., OBJECT accesibility information, etc.)?</em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="4" valign="top"><span class="guideline">B.2.2 Assist authors in checking for accessibility problems.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.1 Check Accessibility (WCAG Level A):</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with the ability to add or modify <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> so that any <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A Success Criterion can be violated, then accessibility <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checking</a> for those success criteria is provided (e.g., an HTML authoring tool that inserts images should check for alternative text; a <a href="Overview.html#def-Video" title="definition: video" class="termdef">video</a> authoring tool with the ability to edit text tracks should check for <a href="Overview.html#def-Captions" title="definition: captions" class="termdef">captions</a>). <span class="sc-bullet"><strong class="handle"><br />
+Note:</strong> <a class="termdef" href="Overview.html#def-Automated-Checking" title="definition: automated checking">Automated </a> and <a class="termdef" href="Overview.html#def-Semi-Automated-Checking" title="definition: semi-automated checking">semi-automated checking</a> is possible (and encouraged) for many types of <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a>. However, <a href="Overview.html#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> is the minimum requirement to meet this success criterion. In manual checking,  the authoring tool provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with instructions for detecting <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">problems</a>, which authors must carry out by themselves. For more  information on checking, see <a href="../ED-IMPLEMENTING-ATAG20-20100210/#checking-types">Implementing ATAG 2.0 - Appendix B: Levels of Checking Automation</a>.</span></span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2 (via button launching AChecker (WCAG 2.0 A option, including &quot;Potential Problems&quot; display))</li>
+      <li>WAVE</li>
+      <li>Acrobat Accessibility Checker </li>
+      <li>MSOffice2010<br />
+          <img src="B221a.jpg" alt="Screenshot of MS2010 checker pane. The top section of the pane lists errors and warnings. Once an issue receives focus, the bottom area displays information about why it should be repaired and how." width="101" height="276" /></li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.2 Availability:</strong> <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">Checking</a> is available prior to <a href="Overview.html#def-Publishing" title="definition: publishing" class="termdef">publishing</a> in a manner appropriate to the <a class="termdef" href="Overview.html#def-Workflow" title="definition: workflow">workflow</a> of the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a>.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2 (via button launching AChecker)</li>
+            <li>Office2010<br />
+                <img src="B222a.jpg" alt="Screenshot of the accessibility checker available from the 'prepare for sharing' section along with 'inspect document' and 'check compatibility'" width="280" height="159" /></li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.3 Help Authors Decide: </strong>For any <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checks</a> that require <a class="termdef" href="Overview.html#def-Author" title="definition: author">author</a> judgment to determine whether a potential <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problem</a> is correctly identified (i.e., <a href="Overview.html#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> and <a href="Overview.html#def-Semi-Automated-Checking" title="definition: semi-automated checking" class="termdef">semi-automated checking</a>), instructions are provided to help the authors decide whether it is correctly identified.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2 (via button launching AChecker)</li>
+            <li>WAVE (via the Index of WAVE icons) </li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.4 Help Authors Locate:</strong> For any checks that require <a class="termdef" href="Overview.html#def-Author" title="definition: author">author</a> judgment to determine whether a potential <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problem</a> is correctly identified (i.e., <a href="Overview.html#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> and <a class="termdef" href="Overview.html#def-Semi-Automated-Checking" title="definition: semi-automated checking">semi-automated checking</a>), the relevant <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">content</a> is identified (e.g., highlighting the affected content, displaying line numbers, etc.)</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2 (via button launching AChecker)</li>
+            <li>MSOffice2010</li>
+            <li>WebAIM WAVE</li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.2.3 Assist authors in repairing accessibility problems.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.3.1 Repair Accessibility (WCAG Level A): </strong>For each <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problem</a> that is identifiable during <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checking</a> (as required by <a href="Overview.html#gl_b22">Guideline B.2.2</a>), <a href="Overview.html#def-Repairing" title="definition: repairing" class="termdef">repair</a> assistance is provided.<span class="sc-bullet"><strong class="handle"><br />
+      Note:</strong> <a class="termdef" href="Overview.html#def-Automated-Repairing" title="definition: automated checking">Automated</a><a class="termdef" href="Overview.html#def-Automated-Checking" title="definition: automated checking"> and</a> <a class="termdef" href="Overview.html#def-Semi-Automated-Repairing" title="definition: semi-automated checking">semi-automated repair</a> is possible (and encouraged) for many types of <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a>. However,<a href="Overview.html#def-Manual-Repairing" title="definition: manual repairing" class="termdef"> manual repair</a> is the minimum requirement to meet this success criterion. In manual repair, the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with instructions for repairing <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">problems</a>, which authors must carry out by themselves. For more information on repair, see <a href="../ED-IMPLEMENTING-ATAG20-20100210/#repair-types">Implementing ATAG 2.0 - Appendix C: Levels of Repair Automation</a>.</span></span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2 (via button launching AChecker (WCAG 2.0 A option, including &quot;Potential Problems&quot; display)) (manual repair instructions) </li>
+      <li>MSOffice2010 (manual repair instructions with pointed to some semi-automated repair functionality)<br />
+          <img src="B221a.jpg" alt="Screenshot of MS2010 checker pane. The top section of the pane lists errors and warnings. Once an issue receives focus, the bottom area displays information about why it should be repaired and how." width="101" height="276" /></li>
+      <li>WAVE (Manual repair instructions are provided) </li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="3" valign="top"><span class="guideline">B.2.4 Assist authors with managing alternative content for non-text content.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.4.1 Editable:</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> are able to modify <a href="Overview.html#def-Equivalent-Alternatives" title="definition: alternative content" class="termdef">alternative content</a> for <a class="termdef" href="Overview.html#def-Non-Text-Objects" title="definition: non-text content">non-text content</a>. This includes types of <a href="Overview.html#def-Equivalent-Alternatives" title="definition: alternative content" class="termdef">alternative content</a> that may not typically be displayed on screen by <a href="Overview.html#def-User-Agent" title="definition: user agent" class="termdef">user agents</a>.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li>Dreamweaver8</li>
+      <li>MS2010</li>
+      <li>XStandard2.1</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.4.2 Automated suggestions:</strong> During the <a href="Overview.html#def-Authoring-Session" title="definition: authoring session" class="termdef">authoring session</a>, the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> can automatically suggest <a href="Overview.html#def-Equivalent-Alternatives" title="definition: alternative content" class="termdef">alternative content</a> for <a class="termdef" href="Overview.html#def-Non-Text-Objects" title="definition: non-text content">non-text content</a> only under the following conditions:<br />
+          <span class="sc-bullet"><strong class="handle">(a) Author Control: </strong><a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> have the opportunity to accept, modify, or reject the suggested alternative content prior to insertion; and </span> <br />
+          <span class="sc-bullet"><strong class="handle">(b) Relevant Sources:</strong> The suggested alternative content is only derived from sources designed to fulfill the same purpose (e.g., suggesting the value of an image's &quot;description&quot; metadata field as a long description).</span></span></td>
+      <td valign="top" class="at-least-one"><ul>
+        <li><strong>@At-least-one</strong>
+          <ul>
+            <li>A-Prompt 1.0</li>
+          </ul>
+        </li>
+        <li><em>De Facto CMS? </em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.4.3 Let User Agents Repair:</strong> After the <a href="Overview.html#def-End-Auth-Session" title="definition: end of an authoring session" class="termdef">end of an authoring session</a>, the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> does not attempt to <a href="Overview.html#def-Repairing" title="definition: repairing" class="termdef">repair</a> <a href="Overview.html#def-Equivalent-Alternatives" title="definition: alternative content" class="termdef">alternative content</a> for <a class="termdef" href="Overview.html#def-Non-Text-Objects" title="definition: non-text content">non-text
+      content</a> using text value that is equally available to <a href="Overview.html#def-User-Agent" title="definition: user agent" class="termdef">user agents</a> (e.g., the filename is not used).</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Many</strong>
+          <ul>
+            <li>TinyMCE3.2</li>
+            <li>Dreamweaver8</li>
+            <li>MS2010</li>
+            <li>XStandard2.1</li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">B.2.5 Assist authors with accessible templates and other pre-authored content.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.1 Templates Accessible (WCAG Level A): </strong>If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> automatically selects <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a> or pre-authored content, then the selections conform to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A when used.<br />
+      <span class="sc-bullet"><strong class="handle">Note:</strong> Templates may not pass accessibility <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checks</a> due to their inherent incompleteness. The accessibility status of a template should instead be measured by the accessibility of completed <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> (in the final <a href="Overview.html#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a>) created when the template is used properly.</span></span></td>
+<td valign="top" class="none-confirmed"><ul>
+  <li><strong>@None-confirmed</strong></li>
+  <li><em>AtutorLCMS? De Facto CMS?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.2 Provide Accessible Templates:</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a>, then there are accessible template <a class="termdef" title="definition: options" href="Overview.html#def-Option">options</a> for a range of template uses.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>AtutorLCMS</li>
+            <li>Dreamweaver8</li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.1 Ensure that accessible authoring actions are given prominence.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.1.1 Accessible Options Prominent (WCAG Level A)</strong>: If <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> are provided with a choice of <a href="Overview.html" title="definition: authoring action" class="termdef">authoring actions</a> for achieving the same <a href="Overview.html#def-Authoring-Outcome" title="definition: authoring outcome" class="termdef">authoring outcome</a> (e.g., styling text), then options that will result in <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> conforming to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A are <a class="termdef" href="Overview.html#def-At-Least-As-Prominent" title="definition: At Least As Prominent">at least as prominent</a> as options that will not. </span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>De Facto CMS</li>
+      <li>Dreamweaver</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">B.3.2 Ensure that features of the authoring tool supporting the production of accessible content are available.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.2.1 Active by Default: </strong>All <a title="definition: accessible content support features" class="termdef" href="Overview.html#def-Accessible-Content-Support-Features">accessible content support features</a> are turned on by default.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li>Dreamweaver8</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.2.2 Reactivate Option:</strong> If <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> turn off an <a title="definition: accessible content support features" class="termdef" href="Overview.html#def-Accessible-Content-Support-Features">accessible content support feature</a>, then they can always turn the feature back on.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Many</strong>
+          <ul>
+            <li>Dreamweaver8 (e.g., &quot;Accessibility&quot; preferences page) </li>
+            <li>TinyMCE3.2</li>
+            <li>AtutorLCMS</li>
+            </ul>
+        </li>
+        <li><em>SAKAI 3.0 HTML Authoring Component?</em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.3 Ensure that features of the authoring tool supporting the production of accessible content are documented.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.3.1 Instructions:</strong> Instructions for using the <a class="termdef" href="Overview.html#def-Accessible-Content-Support-Features" title="definition: accessible content support features"> accessible content support features</a> appear in the <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documentation</a>.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li>Dreamweaver8</li>
+      <li>AtutorLCMS</li>
+      </ul>
+  </li>
+  <li><em>SAKAI 3.0 HTML Authoring Component?</em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.4
+        Ensure that any authoring practices demonstrated in documentation are accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.4.1 Model Accessible Practice (WCAG Level A):</strong> A range of examples in the <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documentation</a> (e.g., <a href="Overview.html#def-Markup" title="definition: markup" class="termdef">markup</a>, screen shots of <a class="termdef" href="Overview.html#def-WYSIWYG" title="definition: WYSIWYG">WYSIWYG</a> <a href="Overview.html#def-Editing-View" title="definition: editing views" class="termdef">editing views</a>) demonstrate <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level A <a class="termdef" href="Overview.html#def-Acc-Auth-Practice" title="definition: accessible authoring practices">accessible authoring practices</a>.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>De Facto CMS</li>
+    </ul>
+  </li>
+  <li><em>AtutorLCMS?</em></li>
+  </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Level AA Success Criteria</h3>
+<div class="table">
+  <table summary="Table of Level AA Success Criteria, sorted by success criteria number." border="1">
+    <tr class="checkhead">
+      <th width="25%">Guideline</th>
+      <th width="25%">Success Criteria</th>
+      <th width="50%" valign="top">Implementations Info </th>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.1.1 [For the authoring tool user interface] Ensure that web-based functionality is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.1.1.2 Web-Based Accessible (WCAG Level AA): </strong><a class="termdef" href="Overview.html#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">Web-based authoring tool user interfaces</a> conform to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA.</span></td>
+<td valign="top" class="none-confirmed"><ul>
+  <li><strong>@None-confirmed</strong></li>
+  <li><em>TinyMCE3.2? De Facto CMS (other than TinyMCE)?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.3.1 [For the authoring tool user interface] Provide keyboard access to authoring features.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.1.3 Keyboard Shortcuts:</strong> Keyboard shortcuts are provided.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li>Dreamweaver8</li>
+      <li>AtutorLCMS</li>
+    </ul>
+  </li>
+  <li><em>Flash8?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.3.5 [For the authoring tool user interface] Provide text search of the content.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.5.1 Text Search:</strong> <a class="termdef" href="Overview.html#def-Author" title="definition: authors">Authors</a> can perform text searches of <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> as follows:<br />
+        <span class="sc-bullet"><strong class="handle">(a) Search All Editable:</strong> Any information that is text and that the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> can modify is searchable, including: text content, text alternatives for <a class="termdef" href="Overview.html#def-Non-Text-Objects" title="definition: non-text objects">non-text content</a>, metadata, <a href="Overview.html#def-Markup" title="definition: markup" class="termdef">markup</a> <a href="Overview.html#def-Element" title="definition: element" class="termdef">elements</a> and attributes; and</span> <br />
+        <span class="sc-bullet"><strong class="handle">Note:</strong> If the current <a href="Overview.html#def-Editing-View" title="definition: editing views" class="termdef">editing view</a> is not able to display the results of   a search, then the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> may provide a mechanism to switch to a different <a href="Overview.html#def-Editing-View" title="definition: editing views" class="termdef">editing view</a> to display the results.</span> <span class="sc-bullet"><strong class="handle"><br />
+          (b) Bi-Directional: </strong>The search can be made forwards or backwards; and</span> <span class="sc-bullet"><strong class="handle"><br />
+      (c) Case Sensitive: </strong>The search can be in both case sensitive and case insensitive modes.</span></span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>DreamWeaver8</li>
+    </ul>
+  </li>
+  <li><em>MS2010?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">A.3.6 [For the authoring tool user interface] Manage preference settings.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.6.1 Save Settings:</strong> The <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> <a href="Overview.html#def-Display-Settings" title="definition: display settings" class="termdef">display settings</a> and <a href="Overview.html#def-Control-Settings" title="definition: control settings" class="termdef">control settings</a> are saved between sessions.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>Dreamweaver8</li>
+      <li>MS2010</li>
+      <li>XStandard2.1</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.6.2 Respect Platform Settings:</strong> The <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> respects platform <a href="Overview.html#def-Display-Settings" title="definition: display settings" class="termdef">display settings</a> and <a href="Overview.html#def-Control-Settings" title="definition: control settings" class="termdef">control settings</a>.<span class="sc-bullet"><strong class="handle"><br />
+Note:</strong> As per <a href="Overview.html#sc_a231">Success Criterion A.2.3.1</a>, the <a class="termdef" href="Overview.html#def-Author" title="definition: authors">author's</a> <a href="Overview.html#def-Display-Settings" title="definition: display settings" class="termdef">display settings</a> must still be independent of the <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> being edited.</span></span></td>
+      <td valign="top" class="at-least-one"><ul>
+        <li><strong>@At-least-one</strong>
+          <ul>
+            <li>TinyMCE3.2 (respects browser display settings) </li>
+          </ul>
+        </li>
+        <li><em>Dreamweaver (for Mac)? Desire2Learn? SAKAI? </em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.4.1 [For the authoring tool user interface] Help users avoid and correct mistakes.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.4.1.3 Undo is Reversible:</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> can immediately reverse the most recent &quot;undo&quot; action(s). </span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li>Dreamweaver8</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.4.2 [For the authoring tool user interface] Document the user interface including all accessibility features.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.4.2.2 Document All Features:</strong> All features of the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> are <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documented</a>.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>Dreamweaver8</li>
+      </ul>
+  </li>
+  <li><em>MS2010?</em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.1.1 Support web content technologies that enable the creation of content that is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.1.2 Accessible Content Production (WCAG Level AA):</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> can use the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> to produce <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> that conforms to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>XStandard2.1</li>
+      <li>TinyMCE3.2</li>
+      <li>DreamWeaver8</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">B.1.2 Ensure that the authoring tool preserves accessibility information.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.2.3  Preserve Accessibility Information (Enhanced):</strong> Any <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility information</a> (up to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA) <a href="Overview.html#def-Recognize" title="definition: recognized (by the authoring tool)" class="termdef">recognized</a> in the input to any <a class="termdef" href="Overview.html#def-Transformation" title="definition: transformation">web content transformation</a> is preserved as <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility information</a> in the output.</span></td>
+<td valign="top" class="none-confirmed"><ul>
+  <li><strong>@None-confirmed</strong>
+    <ul>
+      <li><em>@@examples needed - Jan (in general), Greg (New dreamweaver html5 extension, Adobe Encore?)</em></li>
+      <li><em>@@video converters?  </em></li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.2.4 Notification Prior to Deletion:</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> automatically deletes any <a class="termdef" href="Overview.html#def-Content-Author-Gen" title="definition: author generated content">author-generated content</a> for any reason, then at least one of the following is true: <br />
+          <span class="sc-bullet"><strong class="handle">(a) Preserve Accessibility Information:</strong> The <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> only automatically deletes <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> that it can detect is not <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility
+                  information</a>; or </span> <span class="sc-bullet"><strong class="handle"><br />
+(b) Notification Option:</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> have the <a class="termdef" title="definition: options" href="Overview.html#def-Option">option</a> to receive notification before deletion; or </span> <span class="sc-bullet"><strong class="handle"><br />
+(c) No Deletion Option:</strong> Authors have the <a class="termdef" title="definition: options" href="Overview.html#def-Option">option</a> to prevent automatic deletion by the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a>. </span></span></td>
+      <td valign="top" class="none-confirmed"><ul>
+        <li><strong>@None-confirmed</strong></li>
+        <li><em>@@examples needed - code cleanup tools (Jan)? </em></li>
+        </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.1.3 Ensure that automatically generated content is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.3.2 Accessible Auto-Generated Content (Level AA):</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> <a href="Overview.html#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically generates content</a>, then that <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> conforms to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA  prior to <a href="Overview.html#def-Publishing" title="definition: publishing" class="termdef">publishing</a>.</span><br />
+      <span class="sc-bullet"><strong class="handle">Note:</strong> This success criterion only  applies to the automated behavior specified by the <a href="Overview.html#def-Developer" title="definition: authoring tool developer" class="termdef">authoring tool developer</a>. It does not apply when actions of <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> prevent  generation of <a class="termdef" href="Overview.html#def-Accessible-Web-Content" title="definition: accessible web content">accessible web content</a> (e.g., <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> might set less  strict preferences, ignore prompts for <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility information</a>,  provide faulty accessibility information, write their own automated  scripts, etc.).</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong></li>
+  <li>TinyMCE3.2</li>
+  <li><em>De Facto CMS? </em><em>Dreamweaver8?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="3" valign="top"><span class="guideline">B.2.2 Assist authors in checking for accessibility problems.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.5 </strong><strong class="handle">Check Accessibility (WCAG Level AA):</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with the ability to add or modify <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> so that any <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA Success Criterion can be violated, then accessibility <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checking</a> for those success criteria is provided.<br />
+          <span class="sc-bullet"><strong class="handle">Note:</strong> <a class="termdef" href="Overview.html#def-Automated-Checking" title="definition: automated checking">Automated </a> and <a class="termdef" href="Overview.html#def-Semi-Automated-Checking" title="definition: semi-automated checking">semi-automated checking</a> is possible (and encouraged) for many types of <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a>. However, <a href="Overview.html#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> is the minimum requirement to meet this success criterion. In manual checking,  the authoring tool provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with instructions for detecting <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">problems</a>, which authors must carry out by themselves. For more  information on checking, see <a href="../ED-IMPLEMENTING-ATAG20-20100210/#checking-types">Implementing ATAG 2.0 - Appendix B: Levels of Checking Automation</a>.</span></span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2 (via button launching AChecker (WCAG 2.0 AA option, including &quot;Potential Problems&quot; display))</li>
+      <li>Acrobat Accessibility Checker</li>
+      <li>WAVE</li>
+    </ul>
+  </li>
+  <li><em>De Facto CMS? MS2010 Document Finisher?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.6 Status Report:</strong><span class="sc"> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> can receive     an accessibility status report based on the results of the accessibility <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checks</a>.</span></span><span class="sc-bullet"><strong class="handle"><br />
+Note:</strong> The format of the     accessibility status is not specified. For example, the status might     be a listing of <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">problems</a> detected or a <a href="Overview.html#conf-rel-wcag">WCAG 2.0</a> conformance level, etc.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2 (via button launching AChecker (WCAG 2.0 AA option, including &quot;Potential Problems&quot; display))</li>
+            <li>WAVE</li>
+            <li>Acrobat Accessibility Checker</li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.7 Metadata Production:</strong><span class="sc"><a href="Overview.html#def-Author" title="definition: authors" class="termdef"> Authors</a> have the <a class="termdef" title="definition: options" href="Overview.html#def-Option">option</a> of associating accessibility <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checking</a> results with the <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> as metadata. (Level AA)<br />
+            <span class="sc-bullet"><strong class="handle">Note:</strong> The metadata format that is implemented will dictate the nature of the associated results (e.g., low-level check results, high-level conformance claims, etc.)</span></span></span></td>
+      <td valign="top" class="at-least-one"><ul>
+        <li><strong>@At-least-one</strong>
+          <ul>
+            <li>AChecker (AccessForAll metadata)</li>
+          </ul>
+        </li>
+        <li><em>EARL producing checkers?</em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.2.3 Assist authors in repairing accessibility problems.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.3.2 Repair Accessibility (WCAG Level AA): </strong> For each <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problem</a> that is identifiable during <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checking</a> (as required by <a href="Overview.html#sc_b225">Success Criterion B.2.2.5</a>), <a href="Overview.html#def-Repairing" title="definition: repairing" class="termdef">repair</a> assistance is provided. </span><br />
+      <span class="sc-bullet"><strong class="handle">Note:</strong> <a class="termdef" href="Overview.html#def-Automated-Repairing" title="definition: automated checking">Automated</a><a class="termdef" href="Overview.html#def-Automated-Checking" title="definition: automated checking"> and</a> <a class="termdef" href="Overview.html#def-Semi-Automated-Repairing" title="definition: semi-automated checking">semi-automated repair</a> is possible (and encouraged) for many types of <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a>. However,<a href="Overview.html#def-Manual-Repairing" title="definition: manual repairing" class="termdef"> manual repair</a> is the minimum requirement to meet this success criterion. In manual repair, the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with instructions for repairing <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">problems</a>, which authors must carry out by themselves. For more information on repair, see <a href="../ED-IMPLEMENTING-ATAG20-20100210/#repair-types">Implementing ATAG 2.0 - Appendix C: Levels of Repair Automation</a>.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2 (via button launching AChecker (WCAG 2.0 AA option, including &quot;Potential Problems&quot; display))</li>
+      <li>WAVE</li>
+      <li>Acrobat Accessibility Checker</li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.2.4 Assist authors with managing alternative content for non-text content.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.4.4 Save for Reuse:</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> have the <a class="termdef" title="definition: options" href="Overview.html#def-Option">option</a> of having any <a href="Overview.html#def-Recognize" title="definition: recognized (by the authoring tool)" class="termdef">recognized</a> plain text <a href="Overview.html#def-Equivalent-Alternatives" title="definition: alternative content" class="termdef">alternative content</a> that they enter (e.g., short text labels, long descriptions) stored for future reuse.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>A-Prompt 1.0 (for &quot;alt&quot;) </li>
+    </ul>
+  </li>
+  <li><em>Capscribe?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="4" valign="top"><span class="guideline">B.2.5 Assist authors with accessible templates and other pre-authored content.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.3 Templates Accessible (WCAG Level AA): </strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> automatically selects <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a> or pre-authored content, then the selections conform to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA when used.</span><br />
+      <span class="sc-bullet"><strong class="handle">Note:</strong> Templates may not pass accessibility <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checks</a> due to their inherent incompleteness. The accessibility status of a template should instead be measured by the accessibility of completed <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> (in the final <a href="Overview.html#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a>) created when the template is used properly.</span></td>
+<td valign="top" class="none-confirmed"><ul>
+  <li><strong>@None-confirmed</strong></li>
+  <li><em>De Facto CMS? AtutorLCMS?</em></li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.4  Template Selection Mechanism:</strong> If <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> are provided with a <a href="Overview.html#def-Template-Selection-Mechanism" title="definition: template selection mechanism" class="termdef">template selection mechanism</a>, then both of the following are true:<span class="sc-bullet"><strong class="handle"><br />
+(a) Indicate:</strong> The <a href="Overview.html#def-Template-Selection-Mechanism" title="definition: template selection mechanism" class="termdef">selection mechanism</a> indicates the accessibility status of <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a> (if known); and </span> <span class="sc-bullet"><strong class="handle"><br />
+(b) Prominence:</strong> Any accessible template <a class="termdef" title="definition: options" href="Overview.html#def-Option">options</a> are <a class="termdef" href="Overview.html#def-At-Least-As-Prominent" title="definition: At Least As Prominent">at least as prominent</a> as other <a href="Overview.html#def-Template" title="definition: template" class="termdef">template</a> <a class="termdef" title="definition: options" href="Overview.html#def-Option">options</a>.</span></span></td>
+      <td valign="top" class="none-confirmed"><ul class="style1">
+        <li><strong>@None-confirmed</strong></li>
+        <li>DrupalCMS? AtutorLCMS? De Facto CMS? </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.5  New Templates:</strong> If <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> can use the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> to create new <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a> for use by a <a href="Overview.html#def-Template-Selection-Mechanism" title="definition: template selection mechanism" class="termdef">template selection mechanism</a>, they have the <a class="termdef" title="definition: options" href="Overview.html#def-Option">option</a> to record the accessibility status of the new templates. </span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>Check with Shadi re: EARL? Desire2Learn?</em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.6  Pre-Authored Content Selection Mechanism:</strong> If <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> are provided with a selection mechanism for pre-authored content other than <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a> (e.g., clip art gallery, widget repository, design themes), then both of the following  are true:<br />
+          <span class="sc-bullet"><strong class="handle">(a) Indicate:</strong> The selection mechanism  indicates the accessibility status of the pre-authored content (if known); and </span> <br />
+          <span class="sc-bullet"><strong class="handle">(b) Prominence:</strong> Any accessible <a class="termdef" title="definition: options" href="Overview.html#def-Option">options</a> are <a class="termdef" href="Overview.html#def-At-Least-As-Prominent" title="definition: At Least As Prominent">at least as prominent</a> as other pre-authored content <a class="termdef" title="definition: options" href="Overview.html#def-Option">options</a>.</span></span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>Acrobat? Eclipse/Netbean plugins for DoJo, Jquery? Fluid? </em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.1 Ensure that accessible authoring actions are given prominence.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.1.2 Accessible Options Prominent (WCAG Level AA)</strong>:  If <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> are provided with a choice of <a href="Overview.html" title="definition: authoring action" class="termdef">authoring actions</a> for achieving the same <a href="Overview.html#def-Authoring-Outcome" title="definition: authoring outcome" class="termdef">authoring outcome</a> (e.g., styling text), then options that will result in <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> conforming to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA are <a class="termdef" href="Overview.html#def-At-Least-As-Prominent" title="definition: At Least As Prominent">at least as prominent</a> as options that will not. </span></td>
+      <td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      </ul>
+  </li>
+  <li><em>De Facto CMS? </em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">B.3.2 Ensure that features of the authoring tool supporting the production of accessible content are available.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.2.3 Deactivation Warning:</strong> If <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> turn off an <a title="definition: accessible content support features" class="termdef" href="Overview.html#def-Accessible-Content-Support-Features">accessible content support feature</a>, then the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> informs them that this may increase the risk of <a title="definition: web content accessibility problem" class="termdef" href="Overview.html#def-Web-Content-Accessibility-Problem">content accessibility problems</a>. </span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>Acrobat? MS2010? AtutorLCMS?</em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.2.4 At Least as Prominent:</strong> <a class="termdef" href="Overview.html#def-Accessible-Content-Support-Features" title="definition: accessible content support features"> Accessible content support features</a> are <a class="termdef" href="Overview.html#def-At-Least-As-Prominent" title="definition: At Least As Prominent">at least as prominent</a> as comparable features related to other types of web content problems (e.g., invalid <a href="Overview.html#def-Markup" title="definition: markup" class="termdef">markup</a>, syntax errors, spelling and grammar errors). </span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>TinyMCE3.2</li>
+            <li>MS2010</li>
+            <li>Acrobat </li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.4
+        Ensure that any authoring practices demonstrated in documentation are accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.4.2 Model Accessible Practice (WCAG Level AA):</strong> A range of examples in the <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documentation</a> (e.g., <a href="Overview.html#def-Markup" title="definition: markup" class="termdef">markup</a>, screen shots of <a class="termdef" href="Overview.html#def-WYSIWYG" title="definition: WYSIWYG">WYSIWYG</a> <a href="Overview.html#def-Editing-View" title="definition: editing views" class="termdef">editing views</a>) demonstrate <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AA <a class="termdef" href="Overview.html#def-Acc-Auth-Practice" title="definition: accessible authoring practices">accessible authoring practices</a>. </span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>Acrobat?</em></li>
+      </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Level AAA Success Criteria</h3>
+<div class="table">
+  <table summary="Table of Level AAA Success Criteria, sorted by success criteria number." border="1">
+    <tr class="checkhead">
+      <th width="25%">Guideline</th>
+      <th width="25%">Success Criteria</th>
+      <th width="50%" valign="top">Implementations Info</th>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.1.1 [For the authoring tool user interface] Ensure that web-based functionality is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.1.1.3 Web-Based Accessible (WCAG Level AAA): </strong><a class="termdef" href="Overview.html#def-Web-Based-UI" title="definition: authoring tool user interface (Web-based)">Web-based authoring tool user interfaces</a> conform to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA.</span></td>
+<td width="5%" valign="top" class="none-confirmed"><ul>
+  <li><strong>@None-confirmed</strong>    </li>
+  <li><em>TinyMCE3.2?</em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.2.2 [For the authoring tool user interface] Editing view presentation can be programmatically determined</span>.</td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.2.2.3 Access to Text Presentation (Enhanced):</strong> If an <a class="termdef" href="Overview.html#def-Editing-View" title="definition: editing view">editing view</a> (e.g., <a class="termdef" href="Overview.html#def-WYSIWYG" title="definition: WYSIWYG">WYSIWYG</a> view) <a href="Overview.html#def-Content-Renderings" title="definition: content rendering" class="termdef">renders</a> any <a class="termdef" href="Overview.html#def-Presentation" title="definition: presentation">presentation</a> properties for text, then those properties can be <a class="termdef" href="Overview.html#def-Programmatically-Determined" title="definition: programmatically determined">programmatically determined</a>.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>TinyMCE3.2.(via browser) </li>
+    </ul>
+  </li>
+  <li><em>DrupalCMS? De FactoCMS etc? </em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="3" valign="top"><span class="guideline">A.3.1 [For the authoring tool user interface] Provide keyboard access to authoring features.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.1.4  Keyboard Access (Enhanced):</strong> All functionality of the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> is operable through a <a class="termdef" href="Overview.html#def-Keyboard-Interface" title="definition: keyboard interface">keyboard interface</a>.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Several</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li>AtutorCMS</li>
+      </ul>
+  </li>
+  <li><em>DrupalCMS? De FactoCMS etc?</em> <em>Fluid tools (Decapod coversion, Collection space) </em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.1.5 Customize Keyboard Access:</strong> Keyboard access to the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> can be customized.</span></td>
+      <td valign="top" class="at-least-one"><ul>
+        <li><strong>@At-least-one</strong>
+          <ul>
+            <li>DreamWeaver8<br />
+                <img src="A315a.png" alt="Screenshot of Dreamweaver MX2004 keyboard shortcut editor." width="273" height="242" /></li>
+            <li><em>MS2010, Web-based tools customized from browser? </em></li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.1.6 Present Keyboard Commands:</strong> <a href="Overview.html#def-Authoring-Tool-Interface" title="definition: authoring tool user interface" class="termdef">Authoring tool user interface</a> controls can be presented with their associated keyboard commands.</span></td>
+      <td valign="top"><ul>
+        <li><strong>@Several</strong>
+          <ul>
+            <li>MS2010</li>
+            <li>DreamWeaver8 (underlines access keys in the menus when &quot;alt&quot; key is pressed) <br />
+                <img src="A316a.png" alt="Screenshot of Dreamweaver MX2004 keyboard shortcut editor." width="386" height="49" /></li>
+          </ul>
+        </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">A.3.2 [For the authoring tool user interface] Provide authors with enough time. </span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.2.4 Content Edits Saved (Extended):</strong> The <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> can be set to save all content edits  made by <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a>.</span></td>
+      <td valign="top"><ul>
+          <li><strong>@Several</strong>
+            <ul>
+              <li>Photoshop</li>
+              <li>Google Docs document editor </li>
+            </ul>
+          </li>
+          <li><em>Dreamweaver?</em></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="2" valign="top"><span class="guideline">A.3.6 [For the authoring tool user interface] Manage preference settings.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.6.3 Multiple Sets:</strong> <a class="termdef" href="Overview.html#def-Author" title="definition: authors">Authors</a> can save and reload multiple sets of any <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> <a href="Overview.html#def-Display-Settings" title="definition: display settings" class="termdef">display settings</a> and <a href="Overview.html#def-Control-Settings" title="definition: control settings" class="termdef">control settings</a>.</span></td>
+      <td valign="top"><ul>
+          <li><strong>@Several</strong>
+            <ul>
+              <li>Dreamwaever</li>
+              <li>Indesign </li>
+            </ul>
+          </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">A.3.6.4 Options Assistance:</strong> The <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> includes a mechanism to help <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> configure any <a class="termdef" title="definition: options" href="Overview.html#def-Option">options</a> related to <a href="Overview.html#part_a">Part A</a> of this document. </span></td>
+      <td valign="top"><ul>
+          <li><strong>@Several</strong>
+            <ul>
+              <li>MS2010</li>
+              <li>DreamWeaver8</li>
+            </ul>
+          </li>
+          </ul>
+      <p>&nbsp;</p></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.1.1 Support web content technologies that enable the creation of content that is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.1.3 Accessible Content Production (WCAG Level AAA):</strong> <a href="Overview.html#def-Author" title="definition: authors" class="termdef">Authors</a> can use the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> to produce <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> that conforms to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA.</span></td>
+<td valign="top"><ul>
+  <li><strong>@Many</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+      <li>Dreamweaver</li>
+      </ul>
+  </li>
+  <li><em>Defacto CMS? </em></li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.1.3 Ensure that automatically generated content is accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.1.3.3 Accessible Auto-Generated Content (Level AAA):</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> <a href="Overview.html#def-Content-Auto-Gen" title="definition: automatically-generated content" class="termdef">automatically generates content</a>, then that <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a>conforms to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA  prior to <a href="Overview.html#def-Publishing" title="definition: publishing" class="termdef">publishing</a>. </span><br />
+      <span class="sc-bullet"><strong class="handle">Note:</strong> This success criterion only  applies to the automated behavior specified by the <a href="Overview.html#def-Developer" title="definition: authoring tool developer" class="termdef">authoring tool developer</a>. It does not apply when actions of <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> prevent  generation of <a class="termdef" href="Overview.html#def-Accessible-Web-Content" title="definition: accessible web content">accessible web content</a> (e.g., <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> might set less  strict preferences, ignore prompts for <a class="termdef" href="Overview.html#def-Accessibility-Information" title="definition: accessibility information">accessibility information</a>,  provide faulty accessibility information, write their own automated  scripts, etc.).</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>TinyMCE3.2</li>
+    </ul>
+  </li>
+  <li><em>DeFactoCMS</em>?</li>
+</ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.2.2 Assist authors in checking for accessibility problems.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.2.8 </strong><strong class="handle">Check Accessibility (WCAG Level AAA):</strong> At least one individual <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">check</a> is associated with each <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA Success Criterion that the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> has the functionality to modify <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> to meet.<br />
+      <span class="sc-bullet"><strong class="handle">Note:</strong> <a class="termdef" href="Overview.html#def-Automated-Checking" title="definition: automated checking">Automated </a> and <a class="termdef" href="Overview.html#def-Semi-Automated-Checking" title="definition: semi-automated checking">semi-automated checking</a> is possible (and encouraged) for many types of <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a>. However, <a href="Overview.html#def-Manual-Checking" title="definition: manual checking" class="termdef">manual checking</a> is the minimum requirement to meet this success criterion. In manual checking,  the authoring tool provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with instructions for detecting <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">problems</a>, which authors must carry out by themselves. For more  information on checking, see <a href="../ED-IMPLEMENTING-ATAG20-20100210/#checking-types">Implementing ATAG 2.0 - Appendix B: Levels of Checking Automation</a>.</span></span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>TinyMCE3.2 (via button launching AChecker (WCAG 2.0 AAA option, including &quot;Potential Problems&quot; display))</li>
+      <li><em>WebAIM WAVE? Deeque? HiSoftware? CommonLook? </em></li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.2.3 Assist authors in repairing accessibility problems.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.3.3 Repair Accessibility (WCAG Level AAA): </strong> For each <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problem</a> that is identifiable during <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checking</a> (as required by <a href="Overview.html#sc_b2210">Success Criterion B.2.2.10</a>), <a href="Overview.html#def-Repairing" title="definition: repairing" class="termdef">repair</a> assistance is provided.<br />
+      <span class="sc-bullet"><strong class="handle">Note:</strong> <a class="termdef" href="Overview.html#def-Automated-Repairing" title="definition: automated checking">Automated</a><a class="termdef" href="Overview.html#def-Automated-Checking" title="definition: automated checking"> and</a> <a class="termdef" href="Overview.html#def-Semi-Automated-Repairing" title="definition: semi-automated checking">semi-automated repair</a> is possible (and encouraged) for many types of <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">web content accessibility problems</a>. However,<a href="Overview.html#def-Manual-Repairing" title="definition: manual repairing" class="termdef"> manual repair</a> is the minimum requirement to meet this success criterion. In manual repair, the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides <a class="termdef" href="Overview.html#def-Author" title="definition: author">authors</a> with instructions for repairing <a href="Overview.html#def-Web-Content-Accessibility-Problem" title="definition: Web content accessibility problem" class="termdef">problems</a>, which authors must carry out by themselves. For more information on repair, see <a href="../ED-IMPLEMENTING-ATAG20-20100210/#repair-types">Implementing ATAG 2.0 - Appendix C: Levels of Repair Automation</a>.</span></span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one</strong>
+    <ul>
+      <li>TinyMCE3.2 (via button launching AChecker (WCAG 2.0 AAA option, including &quot;Potential Problems&quot; display))</li>
+      <li><em>WebAIM WAVE? Deeque? HiSoftware? CommonLook? </em></li>
+      </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td rowspan="3" valign="top"><span class="guideline">B.2.5 Assist authors with accessible templates and other pre-authored content.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.7 Templates in Repository:</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides a repository of <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a>, then each of the templates has a recorded accessibility status. </span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>A-Content (Div. Directorate)? Dreamweaver templates may list some accessible status info? Scholar's portal?</em> </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.8 Pre-Authored Content in Repository:</strong> If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> provides a repository of pre-authored content, then each of the content objects has a recorded accessibility status.</span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>A-Content (Div. Directorate)? Dreamweaver templates may list some accessible status info? </em><em>Scholar's portal?</em> </li>
+      </ul>
+      </td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.2.5.9 Templates Accessible (WCAG Level AAA): </strong>If the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> automatically selects <a href="Overview.html#def-Template" title="definition: template" class="termdef">templates</a> or pre-authored content, then the selections conform to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA when used.</span><br />
+        <span class="sc-bullet"><strong class="handle">Note:</strong> Templates may not pass accessibility <a href="Overview.html#def-Checking" title="definition: checking" class="termdef">checks</a> due to their inherent incompleteness. The accessibility status of a template should instead be measured by the accessibility of completed <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> (in the final <a href="Overview.html#def-Web-Content-Technology" title="definition: technology (Web content)" class="termdef">web content technology</a>) created when the template is used properly.</span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>DeFacto CMS?</em></li>
+          <li></li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.1 Ensure that accessible authoring actions are given prominence.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.1.3 Accessible Options Prominent (WCAG Level AAA)</strong>: If <a href="Overview.html#def-Author" title="definition: authors" class="termdef">authors</a> are provided with a choice of <a href="Overview.html" title="definition: authoring action" class="termdef">authoring actions</a> for achieving the same <a href="Overview.html#def-Authoring-Outcome" title="definition: authoring outcome" class="termdef">authoring outcome</a> (e.g., styling text), then options that will result in <a class="termdef" href="Overview.html#def-Web-Content" title="definition: web content">web content</a> conforming to <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA are <a class="termdef" href="Overview.html#def-At-Least-As-Prominent" title="definition: At Least As Prominent">at least as prominent</a> as options that will not. </span></td>
+      <td valign="top" class="none-confirmed"><ul>
+          <li><strong>@None-confirmed</strong></li>
+          <li><em>Opencaps? TinyMCE?</em> </li>
+      </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.3 Ensure that features of the authoring tool supporting the production of accessible content are documented.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.3.2 Accessible Authoring Tutorial: </strong>A <a href="Overview.html#def-Tutorial" title="definition: tutorial" class="termdef">tutorial</a> on an accessible authoring process that is specific to the <a class="termdef" href="Overview.html#def-Authoring-Tool" title="definition: authoring tool">authoring tool</a> is provided.</span></td>
+<td valign="top" class="at-least-one"><ul>
+  <li><strong>@At-least-one </strong>
+    <ul>
+      <li>Acrobat (http://www.adobe.com/accessibility/tutorials.html) </li>
+      <li><em>Atutor</em></li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+    <tr class="checkinfo">
+      <td valign="top"><span class="guideline">B.3.4
+        Ensure that any authoring practices demonstrated in documentation are accessible.</span></td>
+      <td valign="top"><span class="sc-txt"><strong class="handle">B.3.4.3 Model Accessible Practice (WCAG Level AAA):</strong> A range of examples in the <a class="termdef" href="Overview.html#def-Documentation" title="definition: documentation">documentation</a> (e.g., <a href="Overview.html#def-Markup" title="definition: markup" class="termdef">markup</a>, screen shots of <a class="termdef" href="Overview.html#def-WYSIWYG" title="definition: WYSIWYG">WYSIWYG</a> <a href="Overview.html#def-Editing-View" title="definition: editing views" class="termdef">editing views</a>) demonstrate <a href="Overview.html#intro-rel-wcag">WCAG 2.0</a> Level AAA <a class="termdef" href="Overview.html#def-Acc-Auth-Practice" title="definition: accessible authoring practices">accessible authoring practices</a>. </span></td>
+<td valign="top" class="none-confirmed"><ul>
+  <li><strong>@None-confirmed</strong>
+    <ul>
+      <li><em>OpenCaps</em>, <em>Atutor</em> </li>
+    </ul>
+  </li>
+  </ul></td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+<div class="navbar"></div>
+</body>
+</html>
+

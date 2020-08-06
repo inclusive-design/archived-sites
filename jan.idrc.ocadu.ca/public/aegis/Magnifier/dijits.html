@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+		"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Buttons Magnifier Demo</title>
+	<style type="text/css">
+		@import "http://o.aolcdn.com/dojo/1.3.0/dojo/resources/dojo.css";
+
+		/* group multiple buttons in a row */
+		.box {
+			display: block;
+			text-align: center;
+		}
+		.box .dijit {
+			margin-right: 10px;
+		}
+	</style>
+
+	<!-- required: the default dijit theme: -->
+	<link id="themeStyles" rel="stylesheet" href="http://o.aolcdn.com/dojo/1.3.0/dijit/themes/tundra/tundra.css">
+	
+	<!-- required: dojo.js -->
+	<script type="text/javascript" src="http://o.aolcdn.com/dojo/1.3.0/dojo/dojo.xd.js"
+			djConfig="isDebug: true, parseOnLoad: true"></script>
+	<script type="text/javascript">
+		dojo.require("dijit.dijit"); // optimize: load dijit layer
+		dojo.require("dijit.ColorPalette");
+		dojo.require("dijit.Menu");
+		dojo.require("dijit.Tooltip");
+		dojo.require("dijit.form.Button");
+		dojo.require("dojo.parser");
+	</script>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="RoleMonitor.js"></script>
+	<script type="text/javascript" src="MagnifyImage.js"></script>
+	<script type="text/javascript" src="CloneAndMagnify.js"></script>
+	<script type="text/javascript">
+		jQuery (document).ready (function() {
+			aegis.atrc.prefs.init();
+			aegis.atrc.showRolesWindow();
+		});
+	</script>
+</head>
+<body class="tundra">
+	<h1 class="testTitle">Dijit Button Test</h1>
+	<h2>Simple, drop down &amp; combo buttons</h2>
+	<p>
+	Buttons can do an action, display a menu, or both:
+	</p>
+	<p class="box">
+		<button id="button" role="button" onclick="console.log('clicked native button');">&lt;button&gt;</button>
+		<input id="input" type="button" role="button" value="&lt;input type='button'&gt;">
+		<button id="1465" role="button" dojoType="dijit.form.Button" onClick='console.log("event (" + arguments[0] + "," + arguments[0].type +  "): clicked simple")' iconClass="plusIcon" value="Create">
+			Create
+		</button>
+		<span dojoType="dijit.Tooltip" connectId="1465">tooltip on button</span>
+		<button id="1467" dojoType="dijit.form.Button" onClick='console.log("clicked simple")'>
+			View
+		</button>
+		<span dojoType="dijit.Tooltip" connectId="1466">tooltip on button</span>
+		<button dojoType="dijit.form.ComboButton" id="comboCreate" optionsTitle='save options' onClick='console.log("clicked combo save")'
+				iconClass="plusIcon">
+			<span>Create</span>
+			<div dojoType="dijit.Menu" id="createMenu" style="display: none;">
+				<div dojoType="dijit.MenuItem"  iconClass="dijitEditorIcon dijitEditorIconSave"
+					onClick="console.log('not actually saving anything, just a test!')">Create blank</div>
+				<div dojoType="dijit.MenuItem"
+					onClick="console.log('not actually saving anything, just a test!')">Create from template</div>
+			</div>
+		</button>
+		<button dojoType="dijit.form.DropDownButton" id="edit" iconClass="noteIcon" value="Edit">
+			<span>Edit<b>!</b></span>
+			<div dojoType="dijit.Menu" id="editMenu">
+				<div dojoType="dijit.MenuItem" id="cut" iconClass="dijitEditorIcon dijitEditorIconCut"
+					onClick="console.log('not actually cutting anything, just a test!')">Cut</div>
+				<div dojoType="dijit.MenuItem" id="copy" iconClass="dijitEditorIcon dijitEditorIconCopy"
+					onClick="console.log('not actually copying anything, just a test!')">Copy</div>
+				<div dojoType="dijit.MenuItem" id="paste" iconClass="dijitEditorIcon dijitEditorIconPaste"
+					onClick="console.log('not actually pasting anything, just a test!')">Paste</div>
+				<div dojoType="dijit.MenuSeparator"></div>
+				<div dojoType="dijit.PopupMenuItem">
+					<span>Submenu</span>
+					<div dojoType="dijit.Menu" id="submenu2">
+						<div dojoType="dijit.MenuItem" onClick="console.log('Submenu 1!')">Submenu Item One</div>
+						<div dojoType="dijit.MenuItem" onClick="console.log('Submenu 2!')">Submenu Item Two</div>
+						<div dojoType="dijit.PopupMenuItem">
+							<span>Deeper Submenu</span>
+							<div dojoType="dijit.Menu" id="submenu4">
+								<div dojoType="dijit.MenuItem" onClick="console.log('Sub-submenu 1!')">Sub-sub-menu Item One</div>
+								<div dojoType="dijit.MenuItem" onClick="console.log('Sub-submenu 2!')">Sub-sub-menu Item Two</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</button>
+		<button dojoType="dijit.form.DropDownButton" id="color" iconClass="noteIcon" value="color">
+			<span>Color</span>
+			<div dojoType="dijit.ColorPalette" id="colorPalette" style="display: none" palette="3x4"
+				onChange="console.log(this.value);"></div>
+		</button>
+		<button dojoType="dijit.form.ComboButton" id="save" optionsTitle='save options' onClick='console.log("clicked combo save")'
+				iconClass="plusBlockIcon">
+			<span>Save</span>
+			<div dojoType="dijit.Menu" id="saveMenu" style="display: none;">
+				<div dojoType="dijit.MenuItem" id="saveMenuItem" iconClass="dijitEditorIcon dijitEditorIconSave"
+					onClick="console.log('not actually saving anything, just a test!')">Save</div>
+				<div dojoType="dijit.MenuItem" id="saveAs"
+					onClick="console.log('not actually saving anything, just a test!')">Save As</div>
+			</div>
+		</button>
+		<button dojoType="dijit.form.Button" id="disabled" onClick='console.log("clicked simple")' disabled='true' iconClass="plusIcon">
+			Disabled
+		</button>
+	</p>
+</html>

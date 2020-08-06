@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+		"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Toolbar Magnifier Demo</title>
+
+	<!-- required: the default dijit theme: -->
+	<link id="themeStyles" rel="stylesheet" href="http://o.aolcdn.com/dojo/1.3.0/dijit/themes/tundra/tundra.css">
+	
+	<!-- required: dojo.js -->
+	<script type="text/javascript" src="http://o.aolcdn.com/dojo/1.3.0/dojo/dojo.xd.js"
+			djConfig="isDebug: true, parseOnLoad: true"></script>
+
+	<script type="text/javascript">
+		dojo.require("dijit.layout.BorderContainer");
+		dojo.require("dijit.layout.ContentPane");
+		dojo.require("dijit.Editor");
+		dojo.require("dijit._editor.plugins.AlwaysShowToolbar");
+		dojo.require("dojo.parser");	// scan page for widgets and instantiate them
+	</script>
+	
+	<!-- required:  jQuery core -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="RoleMonitor.js"></script>
+	<script type="text/javascript" src="MagnifyImage.js"></script>
+	<script type="text/javascript" src="CloneAndMagnify.js"></script>
+	<script type="text/javascript">
+		var itHasBeenSet = false;
+		function setRoleOnIFrame() {
+			// Set "role" on editor itself to "textbox".
+			//
+			var frameDoc = jQuery ("iframe").attr ("contentDocument");
+			if (frameDoc) {
+				jQuery (frameDoc).attr ("onfocus", "console.debug ('focus iframe');").attr ("onblur", "console.debug ('blur iframe');");
+//				jQuery (frameDoc.body).attr ("tabindex", "0").attr ("role", "textbox").attr ("id", "iFrameTextBox");
+				jQuery (frameDoc.body).attr ("onfocus", "console.debug ('focus iframe doc');");
+				jQuery (frameDoc.body).attr ("onblur", "console.debug ('blur iframe doc');");
+				jQuery (frameDoc.body).html ("<textarea id='iFrameTextBox' tabindex='0' role='textbox'>TESTING</textarea>");
+				console.debug ("DONE! " + itHasBeenSet);
+				clearInterval (itHasBeenSet);
+			}
+		};
+		itHasBeenSet = setInterval (setRoleOnIFrame, 500);
+		
+		jQuery (document).ready (function() {
+			jQuery (document.body).attr ("onfocus", "console.debug ('focus');").attr ("onblur", "console.debug ('blur');");
+			aegis.atrc.prefs.init();
+			aegis.atrc.showRolesWindow();
+		});
+	</script>	
+</head>
+<body class="tundra">
+	<h1>Toolbar Magnifier Demo</h1>
+	<div dojoType="dijit.layout.BorderContainer" style="height: 500px;border:1px solid black;">
+		<div dojoType="dijit.layout.ContentPane" region="top" splitter="true" style="height: 100px">
+			<p>Some Content</p>
+			<img alt="ATRC business card with braille impressions" src="card4.jpg" style="height: 2.5em; width: 3.3em;">
+		</div>
+		<div dojoType="dijit.Editor" id="editor1" region="center" height="100%"></div>
+	</div>
+</body>
+</html>
