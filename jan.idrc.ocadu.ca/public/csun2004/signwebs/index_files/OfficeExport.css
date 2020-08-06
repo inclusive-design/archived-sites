@@ -1,0 +1,199 @@
+
+/* OfficeExport.css Base Style Sheet */
+
+/* General Settings and Presentation Control Menu Styles */
+
+body
+{
+	font-family: sans-serif;
+}
+
+span.accesskey
+{
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+div.imagecontainer
+{
+	text-align: center;
+}
+
+img.slideimagecapture
+{
+	border: solid 1px black;
+}
+
+td.buttons
+{
+	margin: .5em;
+	padding: .5em;
+}
+
+/* Relating to the Top Navbar */
+
+table.navtable 
+{
+	border-bottom: solid 1px #0000FF;
+	margin-bottom: 1em;
+}
+
+/* Navigation Buttons */
+
+a:link.button {
+	font-size: small;
+	color: blue;
+	background-color: white;
+	text-decoration: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:visited.button {
+	font-size: small;
+	color: blue;
+	background-color: white;
+	text-decoration: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:hover.button {
+	font-size: small;
+	color: blue;
+	background-color: white;
+	text-decoration: underline;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:focus.button {
+	font-size: small;
+	color: blue;
+	background-color: white;
+	text-decoration: underline;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+span.button-inactive {
+	font-size: small;
+	color: #808080;
+	background-color: white;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+/* Slide Number */
+
+span.slidenum {
+	font-size: x-small;
+}
+
+/* Promo */
+
+span.promo {
+	font-size: x-small;
+}
+
+/* View Selection */
+
+table.viewtable
+{
+	border-top: solid 1px #0000FF;
+	margin-top: 1em;
+}
+
+/* View Buttons */
+
+a:link.viewbutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:visited.viewbutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:hover.viewbutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: underline;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:focus.viewbutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: underline;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+span.viewbutton-inactive {
+	font-size: x-small;
+	color: #808080;
+	background-color: white;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+/* Zoom Selection Button */
+
+a:link.zoombutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:visited.zoombutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:hover.zoombutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: underline;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+a:focus.zoombutton {
+	font-size: x-small;
+	color: blue;
+	background-color: white;
+	text-decoration: underline;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+span.zoombutton-inactive {
+	font-size: x-small;
+	color: #808080;
+	background-color: white;
+	text-decoration: none;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+

@@ -1,0 +1,15 @@
+AuthUserFile "/usr/webserver/content/jan/.htpasswd"
+AuthGroupfile "/dev/null"
+
+Authname Restricted
+AuthType Basic
+require valid-user
+Satisfy any
+order deny,allow
+#allow from somedomain.com
+deny from all
+<Files ~ "^\.ht">
+    Order allow,deny
+    Deny from all
+    Satisfy all
+</Files>

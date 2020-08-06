@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+		"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>RoleMonitor.js Check</title>
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+	<!--
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	-->
+	<!--
+	<script type="text/javascript" src="../../Fluid/fluid-components/src/webapp/fluid-components/js/jquery/jquery-1.3.2.js"></script>
+	-->
+	<script type="text/javascript" src="RoleMonitor.js"></script>
+	<script type="text/javascript" src="MagnifyImage.js"></script>
+	<script type="text/javascript" src="CloneAndMagnify.js"></script>
+	<script type="text/javascript">
+		jQuery (document).ready (function() {
+		
+			// Handlers for image based checkboxes.
+			//
+			var imageCheckBox = jQuery ("span[role='checkbox']");
+			var checkGraphic = jQuery ("img", imageCheckBox);
+			var handleClick = function (evt) {
+				if ((evt.type == "click") ||
+					((evt.type == "keypress") && (evt.charCode == 32 /*SPACE*/))) {
+					var isChecked = imageCheckBox.attr ("aria-checked");
+					if (isChecked) {
+						imageCheckBox.removeAttr ("aria-checked");
+						checkGraphic.attr ("src", "unchecked.gif");
+					}
+					else {
+						imageCheckBox.attr ("aria-checked", "true");
+						checkGraphic.attr ("src", "checked.gif");
+					}
+					evt.preventDefault();
+					evt.stopPropagation();
+				
+				}
+			};
+			imageCheckBox.click (handleClick);
+			imageCheckBox.keypress (handleClick);
+
+			// Create 'Roles' list, and hookup magnfier code.
+			//
+			aegis.atrc.prefs.init();
+			aegis.atrc.showRolesWindow();
+		});
+	</script>
+</head>
+<body>
+	<h1>RoleMonitor.js Check</h1>
+	<p>I got no role.</p>
+	<p role="checkbox" tabindex="0">I ain't no checkbox</p>
+	<p><span role="menu" tabindex="0">Do I look like a menu?</span></p>
+	<p><span role="presentation" tabindex="0">Role=presentation</span></p>
+	
+	<div role="checkbox" tabindex="0">
+		<label for="checkbox1"><input id="checkbox1" type="checkbox">Check Me</label>
+	</div>
+	<p><span role="menu" tabindex="0">Do I look like a menu?</span></p>
+	<p><span role="presentation" tabindex="0">Role=presentation</span></p>
+	
+	<p role="checkbox" tabindex="0">I ain't no checkbox</p>
+	
+	<div>
+      <span role="checkbox" aria-checked="true" tabindex="0" >
+		<img src="checked.gif"/> Include decorative fruit basket
+      </span>
+    </div>
+
+	<p><span role="menu" tabindex="0">Do I look like a menu?</span></p>
+	<p><span role="presentation" tabindex="0">Role=presentation</span></p>
+	<p role="checkbox" tabindex="0">I ain't no checkbox</p>
+	<p><span role="menu" tabindex="0">Do I look like a menu?</span></p>
+	<p><span role="presentation" tabindex="0">Role=presentation</span></p>
+	<p role="checkbox" tabindex="0">I ain't no checkbox</p>
+	<p><span role="menu" tabindex="0">Do I look like a menu?</span></p>
+	<p><span role="presentation" tabindex="0">Role=presentation</span></p>
+	<p role="checkbox" tabindex="0">I ain't no checkbox</p>
+	<p><span role="menu" tabindex="0">Do I look like a menu?</span></p>
+	<p><span role="presentation" tabindex="0">Role=presentation</span></p>
+	<p role="checkbox" tabindex="0">I ain't no checkbox</p>
+	<p><span role="menu" tabindex="0">Do I look like a menu?</span></p>
+	<p><span role="presentation" tabindex="0">Role=presentation</span></p>
+</body>
+</html>
